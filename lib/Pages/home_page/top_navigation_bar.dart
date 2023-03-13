@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'picture_show.dart';
-import '../Widgets/searchBox.dart';
+import '../../Widgets/searchBox.dart';
 import 'temp.dart';
 
 class PageBar extends StatelessWidget {
@@ -63,6 +63,7 @@ class PageBar extends StatelessWidget {
                       Tab(text: "企业服务",),
                       Tab(text: "下载APP",),
                       Tab(text: "关于",),
+                      Tab(text:"ChatGPT"),
                     ],
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
@@ -77,7 +78,7 @@ class PageBar extends StatelessWidget {
               )),
           body: TabBarView(
             children: [
-              Picture(),
+              picture(),
               const Center(
                   child:
                       Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),

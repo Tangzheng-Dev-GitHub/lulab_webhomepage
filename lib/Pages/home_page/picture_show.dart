@@ -17,7 +17,7 @@ import 'package:flutter_swiper_plus/flutter_swiper_plus.dart';
       "url":"https://yxs-web.oss-cn-beijing.aliyuncs.com/6455977b6fe2dabac6f308037087ed0b.png"
     }
   ];
-  Widget Picture(){
+  Widget picture(){
     return Column(
       children: [
         SizedBox(
