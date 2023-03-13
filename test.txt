@@ -1,0 +1,36 @@
+// 搜索框组件
+import 'package:flutter/material.dart';
+
+class CustomSearchDelegate extends SearchDelegate<String> {
+    @override
+    List<Widget> buildActions(BuildContext context) {
+        return [
+            IconButton(
+                icon: Icon(Icons.clear), 
+                onPressed: () => query = ""
+            )
+        ];
+    }
+
+    @override
+    Widget buildLeading(BuildContext context) {
+        return IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            onPressed: () => close(context, null)
+        );
+    }
+
+    @override
+    Widget buildResults(BuildContext context) {
+        return ListTile(
+            title: Text("搜索结果"),
+        );
+    }
+
+    @override
+    Widget buildSuggestions(BuildContext context) {
+        return ListTile(
+            title: Text("搜索建议"),
+        );
+    }
+}
