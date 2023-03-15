@@ -13,5 +13,13 @@ https://www.hundun.cn/
 
 ### 注意事项：
 暂时是静态页面，没有数据
+
+
 git地址为github，请开翻墙器使用
+
+
+支持windows,macOS,Linux,iOS和Android
+
+
+网页端Debug的时候可能会有error，建议用google或Edge浏览器
 ......

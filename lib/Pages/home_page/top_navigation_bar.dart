@@ -17,7 +17,7 @@ class PageBar extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: DefaultTabController(
-        length: 5,
+        length: 6,
         child: Scaffold(
           appBar: PreferredSize(
               preferredSize: const Size.fromHeight(kToolbarHeight * 1.25),
@@ -91,6 +91,9 @@ class PageBar extends StatelessWidget {
               const Center(
                   child:
                       Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
+              const Center(
+                  child:
+                  Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
             ],
           ),
         ),
