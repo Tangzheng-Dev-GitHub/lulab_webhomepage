@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 
 //搜索框
 class SearchBar extends StatefulWidget {
@@ -64,7 +63,7 @@ class _SearchBarState extends State<SearchBar> {
                           ),
                           decoration: const InputDecoration(
                               contentPadding: EdgeInsets.only(
-                                  left: -2.5, bottom: 20, top: -4),
+                                  left: -2.5, bottom: 20, top: -18),
                               border: InputBorder.none,
                               fillColor: Colors.grey,
                               hintText: "🔍搜索内容",

@@ -1,6 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'picture_show.dart';
+import 'get.dart';
 import '../../Widgets/searchBox.dart';
 import 'temp.dart';
 
@@ -17,7 +16,7 @@ class PageBar extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: DefaultTabController(
-        length: 6,
+        length: 5,
         child: Scaffold(
           appBar: PreferredSize(
               preferredSize: const Size.fromHeight(kToolbarHeight * 1.25),
@@ -32,13 +31,15 @@ class PageBar extends StatelessWidget {
                   const SearchBar(),
                   TextButton(
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.yellow.shade600),
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.yellow.shade600),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50.0),
                         ),
                       ),
-                      minimumSize: MaterialStateProperty.all(const Size(100, 30)),
+                      minimumSize:
+                          MaterialStateProperty.all(const Size(100, 30)),
                       padding: MaterialStateProperty.all(EdgeInsets.zero),
                     ),
                     onPressed: () {
@@ -58,12 +59,21 @@ class PageBar extends StatelessWidget {
                 title: const TabBar(
                     isScrollable: true,
                     tabs: [
-                      Tab(text: "首页",),
-                      Tab(text: "在线学习",),
-                      Tab(text: "企业服务",),
-                      Tab(text: "下载APP",),
-                      Tab(text: "关于",),
-                      Tab(text:"ChatGPT"),
+                      Tab(
+                        text: "首页",
+                      ),
+                      Tab(
+                        text: "在线学习",
+                      ),
+                      Tab(
+                        text: "企业服务",
+                      ),
+                      Tab(
+                        text: "下载APP",
+                      ),
+                      Tab(
+                        text: "关于",
+                      ),
                     ],
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
@@ -78,7 +88,7 @@ class PageBar extends StatelessWidget {
               )),
           body: TabBarView(
             children: [
-              picture(),
+              SingleChildScrollView(child: all()),
               const Center(
                   child:
                       Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
@@ -91,9 +101,6 @@ class PageBar extends StatelessWidget {
               const Center(
                   child:
                       Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
-              const Center(
-                  child:
-                  Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
             ],
           ),
         ),
