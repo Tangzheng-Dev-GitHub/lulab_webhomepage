@@ -25,6 +25,7 @@ import 'package:flutter_swiper_plus/flutter_swiper_plus.dart';
           child: AspectRatio(
             aspectRatio: 35/13,
             child: Swiper(
+              pagination: const SwiperPagination(),
               itemBuilder: (BuildContext context,int index){
             // 配置图片地址
             return Image.network(imageList[index]["url"],fit: BoxFit.fill,);
