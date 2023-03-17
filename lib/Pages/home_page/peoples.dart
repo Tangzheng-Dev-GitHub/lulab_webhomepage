@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
   Widget peoples() {
     return Column(
-      children: const [
+      children: [
         Center(
           child: Text(
               "\n 汇聚全球学者",
@@ -19,6 +19,7 @@ import 'package:flutter/material.dart';
           indent: 650.0,
           endIndent: 650.0,
         ),
+        //Image.file("20230317202507.gif")
       ],
     );
   }
