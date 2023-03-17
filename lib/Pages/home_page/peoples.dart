@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
   Widget peoples() {
     return Column(
       children: [
-        Center(
+        const Center(
           child: Text(
               "\n 汇聚全球学者",
               style: TextStyle(
@@ -11,15 +11,18 @@ import 'package:flutter/material.dart';
               ),
           ),
         ),
-      Text("\n"),
-      Divider(
+      const Text("\n"),
+      const Divider(
           height: 10.0,
           color: Colors.yellow,
           thickness: 5.0,
           indent: 650.0,
           endIndent: 650.0,
         ),
-        //Image.file("20230317202507.gif")
+
+        Image.asset('res/20230317202507的副本.gif',
+          fit: BoxFit.fill,
+        ),
       ],
     );
   }
