@@ -42,7 +42,7 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(height: 16.0),
                 ElevatedButton(
                   onPressed: () {
-                    //runApp(const Loading());
+                    runApp(const Loading());
                   },
                   style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(const Color(
@@ -57,6 +57,7 @@ class LoginPage extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     runApp(const MaterialApp(
+                        debugShowCheckedModeBanner: false,
                         title: "注册陆向谦实验室",
                         home: RegisterPage()
                     ));
@@ -154,7 +155,7 @@ class RegisterPage extends StatelessWidget {
             const SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: () {
-                //runApp(const Loading());
+                runApp(const Loading());
               },
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(const Color(
@@ -168,11 +169,11 @@ class RegisterPage extends StatelessWidget {
             const Text("\n"),
             TextButton(
               onPressed: () {
-                // runApp(const MaterialApp(
-                //     debugShowCheckedModeBanner: false,
-                //     title: "注册陆向谦实验室",
-                //     home: LoginPage()
-                // ));
+                runApp(const MaterialApp(
+                    debugShowCheckedModeBanner: false,
+                    title: "注册陆向谦实验室",
+                    home: LoginPage()
+                ));
               },
               child: const Text('已有账户？ 登陆', style: TextStyle(
                 color: Colors.blueAccent,
@@ -182,7 +183,7 @@ class RegisterPage extends StatelessWidget {
             const Text("\n"),
             TextButton(
               onPressed: () {
-                //runApp(const PageBar());
+                runApp(const PageBar());
               },
               child: const Text('回到主页', style: TextStyle(
                 color: Colors.blueAccent,
