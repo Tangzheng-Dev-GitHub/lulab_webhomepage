@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'items/app.dart';
-import '../../Widgets/searchBox.dart';
-import 'user/login.dart';
-import 'about/about_lulab.dart';
 
-class PageBar extends StatelessWidget {
-  const PageBar({super.key});
+import '../../Widgets/searchBox.dart';
+import 'about/about_lulab.dart';
+import 'items/app.dart';
+import 'items/download_app.dart';
+import 'user/log.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,23 +26,30 @@ class PageBar extends StatelessWidget {
               child: AppBar(
                 backgroundColor: Colors.white,
                 //设置AppBar背景颜色
-                leading: Image.network(
-                  "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
-                  fit: BoxFit.fill,
-                ),
+                // leading: Center(
+                //     child: Image.network(
+                //   "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
+                //   fit: BoxFit.fill,
+                // )),
+                leading: Align(
+                    alignment: Alignment.center,
+                    child: Image.network(
+                      "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
+                      fit: BoxFit.fill,
+                    )),
                 actions: [
                   const SearchBar(),
                   TextButton(
                     style: ButtonStyle(
                       backgroundColor:
-                      MaterialStateProperty.all(Colors.yellow.shade600),
+                          MaterialStateProperty.all(Colors.yellow.shade600),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50.0),
                         ),
                       ),
                       minimumSize:
-                      MaterialStateProperty.all(const Size(100, 30)),
+                          MaterialStateProperty.all(const Size(100, 30)),
                       padding: MaterialStateProperty.all(EdgeInsets.zero),
                     ),
                     onPressed: () {
@@ -78,7 +87,7 @@ class PageBar extends StatelessWidget {
                     ],
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
-                      fontWeight: FontWeight.w600,
+                      //fontWeight: FontWeight.w400,
                       fontSize: 16.0,
                     ),
                     unselectedLabelColor: Colors.grey,
@@ -90,13 +99,16 @@ class PageBar extends StatelessWidget {
           body: TabBarView(
             children: [
               SingleChildScrollView(child: all()),
-              const Center(child: Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
-              const Center(
-                  child:Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
               const Center(
                   child:
-                  Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
-              const AboutLulab()
+                      Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
+              const Center(
+                  child:
+                      Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
+              SingleChildScrollView(
+                child: downloadApp(),
+              ),
+              SingleChildScrollView(child: alulab())
             ],
           ),
         ),

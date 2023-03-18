@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_swiper_plus: ^2.0.4
   url_launcher: ^6.0.9
+  flutter_swiper :  ^1.1.6
+  video_player: ^2.6.0
+  chewie: ^1.4.0
+  expandable_text: ^2.3.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -68,6 +72,10 @@ flutter:
     - res/linianshijie.png
     - res/small.png
     - res/hundun2.png
+    - res/l1_1.png
+    - res/l1_2.gif
+    - res/l2_1.jpg
+    - res/l2_2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 Widget learn() {
   return Column(
-    children: const [
-      Center(
+    children: [
+      const Center(
         child: Text(
           "\n 个人学习",
           style: TextStyle(
@@ -11,15 +12,24 @@ Widget learn() {
           ),
         ),
       ),
-      Text("\n"),
-      Divider(
+      const Divider(
         height: 10.0,
         color: Colors.yellow,
         thickness: 5.0,
         indent: 650.0,
         endIndent: 650.0,
       ),
-      Center(
+      ElevatedButton(
+        onPressed: () {},
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.white),
+          elevation: MaterialStateProperty.all(0),
+        ),
+        child: Image.asset("res/l1_1.png"),
+      ),
+      Image.asset("res/l1_2.gif"),
+      const Text("\n"),
+      const Center(
         child: Text(
           "\n 企业学习",
           style: TextStyle(
@@ -28,14 +38,23 @@ Widget learn() {
           ),
         ),
       ),
-      Text("\n"),
-      Divider(
+      const Text("\n"),
+      const Divider(
         height: 10.0,
         color: Colors.yellow,
         thickness: 5.0,
         indent: 650.0,
         endIndent: 650.0,
       ),
+      ElevatedButton(
+        onPressed: () {},
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.white),
+          elevation: MaterialStateProperty.all(0),
+        ),
+        child: Image.asset("res/l2_1.jpg"),
+      ),
+      Image.asset("res/l2_2.jpg")
     ],
   );
 }

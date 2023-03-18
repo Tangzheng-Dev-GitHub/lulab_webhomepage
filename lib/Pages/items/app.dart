@@ -3,6 +3,7 @@ import 'peoples.dart';
 import 'subjects.dart';
 import 'picture_show.dart';
 import 'learn.dart';
+import 'end_about.dart';
 Widget all() {
   return Column(
       children: [
@@ -10,6 +11,7 @@ Widget all() {
         peoples(),
         subjects(),
         learn(),
+        ea(),
       ],
     );
 }

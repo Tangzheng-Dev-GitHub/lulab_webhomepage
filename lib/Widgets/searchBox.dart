@@ -66,7 +66,7 @@ class _SearchBarState extends State<SearchBar> {
                                   left: -2.5, bottom: 20, top: -18),
                               border: InputBorder.none,
                               fillColor: Colors.grey,
-                              hintText: "🔍搜索内容",
+                              hintText: "搜索内容",
                               hintStyle: TextStyle(
                                 fontSize: 12,
                               )),
