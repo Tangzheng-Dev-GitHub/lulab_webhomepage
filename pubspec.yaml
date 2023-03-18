@@ -66,6 +66,8 @@ flutter:
     - res/dierquxian.png
     - res/diyiyuanli.png
     - res/linianshijie.png
+    - res/small.png
+    - res/hundun2.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
