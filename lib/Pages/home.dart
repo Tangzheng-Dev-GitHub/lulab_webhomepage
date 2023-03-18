@@ -33,14 +33,14 @@ class PageBar extends StatelessWidget {
                   TextButton(
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Colors.yellow.shade600),
+                      MaterialStateProperty.all(Colors.yellow.shade600),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50.0),
                         ),
                       ),
                       minimumSize:
-                          MaterialStateProperty.all(const Size(100, 30)),
+                      MaterialStateProperty.all(const Size(100, 30)),
                       padding: MaterialStateProperty.all(EdgeInsets.zero),
                     ),
                     onPressed: () {
@@ -90,14 +90,12 @@ class PageBar extends StatelessWidget {
           body: TabBarView(
             children: [
               SingleChildScrollView(child: all()),
-              const Center(
-                  child:
-                      Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
+              const Center(child: Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
               const Center(
                   child:Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
               const Center(
                   child:
-                      Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
+                  Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
               const AboutLulab()
             ],
           ),

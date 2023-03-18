@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
 import 'Pages/home.dart';
-void main(){
+
+void main() {
   runApp(const PageBar());
 }

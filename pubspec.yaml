@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_swiper_plus: ^2.0.4
+  url_launcher: ^6.0.9
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -62,6 +63,9 @@ flutter:
     - res/peoples.gif
     - res/lulab_logo.jpeg
     - res/hundun.png
+    - res/dierquxian.png
+    - res/diyiyuanli.png
+    - res/linianshijie.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

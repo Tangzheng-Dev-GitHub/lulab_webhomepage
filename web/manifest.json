@@ -1,7 +1,6 @@
 {
-    "name": "lulab_webhomepage",
-    "short_name": "lulab_webhomepage",
-    "start_url": ".",
+    "name": "陆向谦实验室首页",
+    "short_name": "lwhp",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
