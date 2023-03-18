@@ -17,7 +17,7 @@ Widget _buildSubjectCard(String title, String imagePath, String subtitle) {
         Center(
             child: Text(subtitle,
                 style: const TextStyle(
-                  fontSize: 25,
+                  fontSize: 20,
                 ))),
       ],
     ),
@@ -32,7 +32,7 @@ Widget _buildLTItem(String label, String sublable, String a) {
         style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
       ),
       subtitle: Text(sublable,
-          style: const TextStyle(color: Colors.black, fontSize: 16.0)),
+          style: const TextStyle(color: Colors.black, fontSize: 25.0)),
       leading: Image.network(a),
     )
   ]);
@@ -81,7 +81,7 @@ Widget subjects() {
             shrinkWrap: true,
             children: [
               _buildLTItem("创新院", "\nCEO的认知高地", "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-              _buildLTItem('文理院', "\n至文 至理 至博雅", "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
+              _buildLTItem('文理院', "\n至文   至理   至博雅", "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
             ],
           )),
       SizedBox(
