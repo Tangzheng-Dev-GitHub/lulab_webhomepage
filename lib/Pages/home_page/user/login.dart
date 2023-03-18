@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'top_navigation_bar.dart';
+import '../top_navigation_bar.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -53,6 +53,7 @@ class LoginPage extends StatelessWidget {
                       fontSize: 20
                   )),
                 ),
+                const Text("\n"),
                 TextButton(
                   onPressed: () {
                     runApp(const MaterialApp(
@@ -65,6 +66,7 @@ class LoginPage extends StatelessWidget {
                     fontSize: 20,
                   )),
                 ),
+                const Text("\n"),
                 TextButton(
                   onPressed: () {
                     runApp(const PageBar());
@@ -163,6 +165,7 @@ class RegisterPage extends StatelessWidget {
                   fontSize: 20
               )),
             ),
+            const Text("\n"),
             TextButton(
               onPressed: () {
                 runApp(const MaterialApp(
@@ -176,6 +179,7 @@ class RegisterPage extends StatelessWidget {
                 fontSize: 20,
               )),
             ),
+            const Text("\n"),
             TextButton(
               onPressed: () {
                 runApp(const PageBar());
