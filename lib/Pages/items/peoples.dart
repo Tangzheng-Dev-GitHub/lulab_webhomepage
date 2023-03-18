@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
           endIndent: 650.0,
         ),
 
-        Image.asset('res/20230317202507的副本.gif',
+        Image.asset('res/peoples.gif',
           fit: BoxFit.fill,
         ),
       ],
