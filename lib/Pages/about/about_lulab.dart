@@ -6,7 +6,7 @@ Widget alulab() {
     children: [
       const Text("\n\n\n\n\n\n\n\n\n\n\n\n\n"),
       Image.asset("res/lulab_logo.jpeg"),
-      const Text("\n\n\n\n\n\n\n\n\n\n\n\n\n"),
+      const Text("\n\n"),
       Card(
         child: Column(
           children: <Widget>[

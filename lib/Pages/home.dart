@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:lulab_webhomepage/Pages/user/using/dialog.dart';
 
 import '../../Widgets/searchBox.dart';
 import 'about/about_lulab.dart';
 import 'items/app.dart';
 import 'items/download_app.dart';
-import 'user/log.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -52,14 +52,18 @@ class HomePage extends StatelessWidget {
                           MaterialStateProperty.all(const Size(100, 30)),
                       padding: MaterialStateProperty.all(EdgeInsets.zero),
                     ),
-                    onPressed: () {
-                      runApp(const LoginPage());
+                    onPressed: () async {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return LoginDialog();
+                        },
+                      );
                     },
                     child: const Text(
                       '登陆',
                       style: TextStyle(
                         color: Colors.black,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
