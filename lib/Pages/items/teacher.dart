@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 Widget teacher() {
   return Column(
     children: const [
@@ -14,7 +15,7 @@ Widget teacher() {
       Text("\n"),
       Divider(
         height: 10.0,
-        color: Colors.yellow,
+        color: Colors.green,
         thickness: 5.0,
         indent: 650.0,
         endIndent: 650.0,

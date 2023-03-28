@@ -5,7 +5,7 @@ Widget learn() {
     children: [
       const Center(
         child: Text(
-          "\n 个人学习",
+          "\n 个人学习\n",
           style: TextStyle(
             fontSize: 40.0,
             fontWeight: FontWeight.w600,
@@ -14,7 +14,7 @@ Widget learn() {
       ),
       const Divider(
         height: 10.0,
-        color: Colors.yellow,
+        color: Colors.green,
         thickness: 5.0,
         indent: 650.0,
         endIndent: 650.0,
@@ -40,7 +40,7 @@ Widget learn() {
       const Text("\n"),
       const Divider(
         height: 10.0,
-        color: Colors.yellow,
+        color: Colors.green,
         thickness: 5.0,
         indent: 650.0,
         endIndent: 650.0,

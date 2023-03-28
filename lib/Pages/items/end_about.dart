@@ -29,7 +29,7 @@ Widget ea() {
       const Text("\n"),
       const Divider(
         height: 10.0,
-        color: Colors.yellow,
+        color: Colors.green,
         thickness: 4.0,
         endIndent: 1250,
         indent: 30,

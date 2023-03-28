@@ -15,67 +15,43 @@ Widget downloadApp() {
         ),
       ),
       const Text("\n\n"),
-      const Text(
-        "下载选项：",
-        style: TextStyle(
-          fontSize: 20.0,
-          fontWeight: FontWeight.w600,
+      Column(children: const [
+        Text(
+          "下载选项：",
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.w600,
+          ),
         ),
-      ),
+      ]),
       const Text("\n\n\n\n\n"),
-        ElevatedButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.white),
-              elevation: MaterialStateProperty.all(0),
+      ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.white),
+            elevation: MaterialStateProperty.all(0),
+          ),
+          onPressed: () {
+            launch(
+                "https://github.com/proflulab/LuLab_frontend/tree/master/android");
+          },
+          child: const ListTile(
+            title: Text(
+              "下载（Android）",
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.w600,
+              ),
             ),
-            onPressed: () {
-              launch(
-                  "https://github.com/proflulab/LuLab_frontend/tree/master/android");
-            },
-            child: const ListTile(
-              title: Text(
-                "下载（Android）",
-                style: TextStyle(
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.w600,
-                ),
+            subtitle: Text(
+              "在android手机上安装陆向谦实验室",
+              style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w600,
               ),
-              subtitle: Text(
-                "在android手机上安装陆向谦实验室",
-                style: TextStyle(
-                  fontSize: 15.0,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              leading: Icon(Icons.android),
-            )),
-        const Text("\n\n"),
-        ElevatedButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.white),
-              elevation: MaterialStateProperty.all(0),
             ),
-            onPressed: () {
-              launch(
-                  "https://github.com/proflulab/LuLab_frontend/tree/master/ios");
-            },
-            child: const ListTile(
-              title: Text(
-                "下载（iOS）",
-                style: TextStyle(
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              subtitle: Text(
-                "在iPhone手机上安装陆向谦实验室",
-                style: TextStyle(
-                  fontSize: 15.0,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              leading: Icon(Icons.apple),
-            )),
+            leading: Icon(Icons.android),
+            trailing: Icon(Icons.navigate_next_outlined),
+          )),
       const Text("\n\n"),
       ElevatedButton(
           style: ButtonStyle(
@@ -84,7 +60,34 @@ Widget downloadApp() {
           ),
           onPressed: () {
             launch(
-                "https://github.com/proflulab/LuLab_frontend/tags");
+                "https://github.com/proflulab/LuLab_frontend/tree/master/ios");
+          },
+          child: const ListTile(
+            title: Text(
+              "下载（iOS）",
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            subtitle: Text(
+              "在iPhone手机上安装陆向谦实验室",
+              style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            leading: Icon(Icons.apple),
+            trailing: Icon(Icons.navigate_next_outlined),
+          )),
+      const Text("\n\n"),
+      ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.white),
+            elevation: MaterialStateProperty.all(0),
+          ),
+          onPressed: () {
+            launch("https://github.com/proflulab/LuLab_frontend/tags");
           },
           child: const ListTile(
             title: Text(
@@ -95,6 +98,7 @@ Widget downloadApp() {
               ),
             ),
             leading: Icon(Icons.install_mobile),
+            trailing: Icon(Icons.navigate_next_outlined),
           )),
       const Text("\n\n"),
       ElevatedButton(
@@ -103,8 +107,7 @@ Widget downloadApp() {
             elevation: MaterialStateProperty.all(0),
           ),
           onPressed: () {
-            launch(
-                "https://github.com/proflulab/LuLab_frontend/");
+            launch("https://github.com/proflulab/LuLab_frontend/");
           },
           child: const ListTile(
             title: Text(
@@ -115,9 +118,10 @@ Widget downloadApp() {
               ),
             ),
             leading: Icon(Icons.install_desktop),
+            trailing: Icon(Icons.navigate_next_outlined),
           )),
       const Text(
-          "\n\n\n\n\n声明：陆向谦实验室Application未在GooglePlay和AppStore上传，只支持源码下载")
+          "\n\n\n\n\n声明：陆向谦实验室Application未在GooglePlay和AppStore上传，只支持源码下载\n\n\n\n\n")
     ],
   );
 }

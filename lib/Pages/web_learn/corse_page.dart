@@ -54,7 +54,12 @@ class _SideListViewMenuState extends State<SideListViewMenu> {
                             ),
                             Expanded(
                               child: Center(
-                                child: Text(str),
+                                child: Text(
+                                  str,
+                                  style: const TextStyle(
+                                      fontFamily: 'MyFontStyle',
+                                      fontSize: 18.0),
+                                ),
                               ),
                             )
                           ],

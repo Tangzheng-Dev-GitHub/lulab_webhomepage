@@ -48,7 +48,7 @@ Widget subjects() {
     children: [
       const Center(
         child: Text(
-          "\n 混沌创新学科",
+          "\n 陆向谦实验室",
           style: TextStyle(
             fontSize: 40.0,
             fontWeight: FontWeight.w600,
@@ -58,7 +58,7 @@ Widget subjects() {
       const Text("\n"),
       const Divider(
         height: 10.0,
-        color: Colors.yellow,
+        color: Colors.green,
         thickness: 5.0,
         indent: 650.0,
         endIndent: 650.0,
