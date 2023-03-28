@@ -18,6 +18,7 @@ Widget _buildSubjectCard(String title, String imagePath, String subtitle) {
             child: Text(subtitle,
                 style: const TextStyle(
                   fontSize: 20,
+                  fontFamily: 'MyFontStyle',
                 ))),
       ],
     ),
@@ -32,7 +33,11 @@ Widget _buildLTItem(String label, String sublable, String a) {
         style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
       ),
       subtitle: Text(sublable,
-          style: const TextStyle(color: Colors.black, fontSize: 25.0)),
+          style: const TextStyle(
+            color: Colors.black,
+            fontSize: 25.0,
+            fontFamily: 'MyFontStyle',
+          )),
       leading: Image.network(a),
     )
   ]);
@@ -80,8 +85,10 @@ Widget subjects() {
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             children: [
-              _buildLTItem("创新院", "\nCEO的认知高地", "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-              _buildLTItem('文理院', "\n至文   至理   至博雅", "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
+              _buildLTItem("创新院", "\nCEO的认知高地",
+                  "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
+              _buildLTItem('文理院', "\n至文   至理   至博雅",
+                  "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
             ],
           )),
       SizedBox(
@@ -92,8 +99,10 @@ Widget subjects() {
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             children: [
-              _buildLTItem("在线学籍", "\n商业创新必修课", "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-              _buildLTItem('创商院', "\n创始人和团队的共学场", "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
+              _buildLTItem("在线学籍", "\n商业创新必修课",
+                  "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
+              _buildLTItem('创商院', "\n创始人和团队的共学场",
+                  "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
             ],
           ))
     ],

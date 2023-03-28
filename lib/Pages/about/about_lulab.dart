@@ -15,6 +15,8 @@ Widget alulab() {
                 '     服务使用协议',
                 style: TextStyle(
                   color: Colors.black,
+                  fontFamily: 'MyFontStyle',
+                  fontSize: 20.0,
                 ),
               ),
               trailing: IconButton(
@@ -28,6 +30,8 @@ Widget alulab() {
                 '     隐私政策',
                 style: TextStyle(
                   color: Colors.black,
+                  fontFamily: 'MyFontStyle',
+                  fontSize: 20.0,
                 ),
               ),
               trailing: IconButton(
@@ -41,6 +45,8 @@ Widget alulab() {
                 '     版权声明',
                 style: TextStyle(
                   color: Colors.black,
+                  fontFamily: 'MyFontStyle',
+                  fontSize: 20.0,
                 ),
               ),
               trailing: IconButton(

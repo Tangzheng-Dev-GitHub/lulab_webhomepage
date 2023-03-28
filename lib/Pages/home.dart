@@ -5,6 +5,7 @@ import 'about/about_lulab.dart';
 import 'items/app.dart';
 import 'items/download_app.dart';
 import 'user/alternatives/a_login.dart';
+import 'web_learn/corse_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -88,7 +89,8 @@ class HomePage extends StatelessWidget {
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
                       //fontWeight: FontWeight.w400,
-                      fontSize: 16.0,
+                      fontSize: 20.0,
+                      fontFamily: 'MyFontStyle',
                     ),
                     unselectedLabelColor: Colors.grey,
                     indicatorColor: Colors.yellow,
@@ -99,9 +101,7 @@ class HomePage extends StatelessWidget {
           body: TabBarView(
             children: [
               SingleChildScrollView(child: all()),
-              const Center(
-                  child:
-                      Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
+              const SideListViewMenu(),
               const Center(
                   child:
                       Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),

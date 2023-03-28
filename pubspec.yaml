@@ -74,6 +74,10 @@ flutter:
     - res/hundun2.png
     - res/l1_1.png
     - res/l2_1.jpg
+  fonts:
+    - family: MyFontStyle
+      fonts:
+        - asset: res/汉仪行楷简.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
