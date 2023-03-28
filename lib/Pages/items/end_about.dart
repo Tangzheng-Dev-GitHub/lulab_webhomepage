@@ -17,7 +17,7 @@ Widget ea() {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           Text(
-            "\n    关于陆向谦实验室",
+            "\n     关于陆向谦实验室",
             textAlign: TextAlign.left,
             style: TextStyle(
               fontSize: 30.0,
@@ -32,7 +32,7 @@ Widget ea() {
         color: Colors.green,
         thickness: 4.0,
         endIndent: 1250,
-        indent: 30,
+        indent: 40,
       ),
       Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -46,18 +46,18 @@ Widget ea() {
             ),
           ),
           Text(
-            "\n     公司名称：视算新里程科技（北京）有限公司",
+            "\n    公司名称：视算新里程科技（北京）有限公司",
             textAlign: TextAlign.left,
             style: TextStyle(
-              fontSize: 15.0,
+              fontSize: 18.0,
               fontFamily: 'MyFontStyle',
             ),
           ),
           Text(
-            "\n     联系我们：business@proflu.cn\n\n",
+            "\n    联系我们：business@proflu.cn\n\n",
             textAlign: TextAlign.left,
             style: TextStyle(
-              fontSize: 15.0,
+              fontSize: 18.0,
               fontFamily: 'MyFontStyle',
             ),
           )

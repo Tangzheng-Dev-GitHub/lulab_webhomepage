@@ -95,7 +95,8 @@ class HomePage extends StatelessWidget {
                     unselectedLabelColor: Colors.grey,
                     indicatorColor: Colors.yellow,
                     indicator: UnderlineTabIndicator(
-                      borderSide: BorderSide(width: 3, color: Colors.yellow),
+                      borderSide:
+                          BorderSide(width: 3, color: Colors.greenAccent),
                     )),
               )),
           body: TabBarView(
