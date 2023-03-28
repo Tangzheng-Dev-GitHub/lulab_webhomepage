@@ -15,7 +15,7 @@ Widget peoples() {
       const Text("\n"),
       const Divider(
         height: 10.0,
-        color: Colors.yellow,
+        color: Colors.green,
         thickness: 5.0,
         indent: 650.0,
         endIndent: 650.0,
