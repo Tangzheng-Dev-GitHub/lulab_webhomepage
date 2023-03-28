@@ -73,9 +73,7 @@ flutter:
     - res/small.png
     - res/hundun2.png
     - res/l1_1.png
-    - res/l1_2.gif
     - res/l2_1.jpg
-    - res/l2_2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

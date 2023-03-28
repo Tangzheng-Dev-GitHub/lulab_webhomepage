@@ -27,7 +27,6 @@ Widget learn() {
         ),
         child: Image.asset("res/l1_1.png"),
       ),
-      Image.asset("res/l1_2.gif"),
       const Text("\n"),
       const Center(
         child: Text(
@@ -54,7 +53,55 @@ Widget learn() {
         ),
         child: Image.asset("res/l2_1.jpg"),
       ),
-      Image.asset("res/l2_2.jpg")
+      const Text("\n\n"),
+      Wrap(
+        spacing: 8.0, // 项之间的水平间距
+        runSpacing: 8.0, // 行之间的垂直间距
+        children: List.generate(
+          7,
+          (index) => CircleAvatar(
+            radius: 60.0,
+            child: Image.asset("res/lulab_logo.jpeg"),
+          ),
+        ),
+      ),
+      const Text("\n"),
+      Wrap(
+        spacing: 8.0, // 项之间的水平间距
+        runSpacing: 8.0, // 行之间的垂直间距
+        children: List.generate(
+          7,
+          (index) => CircleAvatar(
+            radius: 60.0,
+            child: Image.asset("res/lulab_logo.jpeg"),
+          ),
+        ),
+      ),
+      const Text("\n"),
+      Wrap(
+        spacing: 8.0, // 项之间的水平间距
+        runSpacing: 8.0, // 行之间的垂直间距
+        children: List.generate(
+          7,
+          (index) => CircleAvatar(
+            radius: 60.0,
+            child: Image.asset("res/lulab_logo.jpeg"),
+          ),
+        ),
+      ),
+      const Text("\n"),
+      Wrap(
+        spacing: 8.0, // 项之间的水平间距
+        runSpacing: 8.0, // 行之间的垂直间距
+        children: List.generate(
+          7,
+          (index) => CircleAvatar(
+            radius: 60.0,
+            child: Image.asset("res/lulab_logo.jpeg"),
+          ),
+        ),
+      ),
+      const Text("\n\n"),
     ],
   );
 }
