@@ -78,9 +78,21 @@ class _SideListViewMenuState extends State<SideListViewMenu> {
           Expanded(
             child: Container(
               color: Colors.white,
-              child: Center(
-                child: card[_selectedIdx],
-              ),
+              child: SingleChildScrollView(
+                  child: Column(children: [
+                card[_selectedIdx],
+                const Text(
+                  "\n\n想看更多课程？",
+                  style: TextStyle(color: Colors.red, fontSize: 30.0),
+                ),
+                const Text(
+                  "\n下载陆向谦实验室超级Application\n\n\n\n",
+                  style: TextStyle(
+                      fontFamily: 'MyFontStyle',
+                      color: Colors.red,
+                      fontSize: 50.0),
+                ),
+              ])),
             ),
           )
         ],

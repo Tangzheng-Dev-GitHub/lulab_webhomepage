@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
                       //fontWeight: FontWeight.w400,
-                      fontSize: 23.5,
+                      fontSize: 21.5,
                       fontFamily: 'MyFontStyle',
                     ),
                     unselectedLabelColor: Colors.grey,
