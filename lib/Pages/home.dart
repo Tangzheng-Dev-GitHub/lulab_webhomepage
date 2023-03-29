@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lulab_webhomepage/Widgets/searchBox.dart';
 
-import '../../Widgets/searchBox.dart';
 import 'about/about_lulab.dart';
 import 'items/app.dart';
 import 'items/download_app.dart';
@@ -26,20 +26,17 @@ class HomePage extends StatelessWidget {
               preferredSize: const Size.fromHeight(kToolbarHeight * 1.25),
               child: AppBar(
                 backgroundColor: Colors.white,
-                //设置AppBar背景颜色
-                // leading: Center(
-                //     child: Image.network(
-                //   "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
-                //   fit: BoxFit.fill,
-                // )),
                 leading: Align(
                     alignment: Alignment.center,
                     child: Image.network(
                       "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
                       fit: BoxFit.fill,
                     )),
+                flexibleSpace: Image.network(
+                    "https://p1.ssl.qhmsg.com/t01c3b81fccea47f580.jpg",
+                    fit: BoxFit.cover),
                 actions: [
-                  const SearchBar(),
+                  const SearchBox(),
                   TextButton(
                     style: ButtonStyle(
                       backgroundColor:
@@ -89,14 +86,13 @@ class HomePage extends StatelessWidget {
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
                       //fontWeight: FontWeight.w400,
-                      fontSize: 20.0,
+                      fontSize: 22.0,
                       fontFamily: 'MyFontStyle',
                     ),
                     unselectedLabelColor: Colors.grey,
                     indicatorColor: Colors.yellow,
                     indicator: UnderlineTabIndicator(
-                      borderSide:
-                          BorderSide(width: 3, color: Colors.greenAccent),
+                      borderSide: BorderSide(width: 3, color: Colors.red),
                     )),
               )),
           body: TabBarView(

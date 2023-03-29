@@ -10,8 +10,8 @@ Widget downloadApp() {
       const Text(
         "下载陆向谦实验室Application",
         style: TextStyle(
-          fontSize: 40.0,
-          fontWeight: FontWeight.w600,
+          fontSize: 50.0,
+          fontFamily: 'MyFontStyle',
         ),
       ),
       const Text("\n\n"),
@@ -47,6 +47,7 @@ Widget downloadApp() {
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w600,
+                fontFamily: 'MyFontStyle',
               ),
             ),
             leading: Icon(Icons.android),
@@ -75,6 +76,7 @@ Widget downloadApp() {
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w600,
+                fontFamily: 'MyFontStyle',
               ),
             ),
             leading: Icon(Icons.apple),
