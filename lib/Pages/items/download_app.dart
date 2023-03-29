@@ -96,7 +96,7 @@ Widget downloadApp() {
               "下载陆向谦实验室Application（github版本发布式链接）",
               style: TextStyle(
                 fontSize: 30.0,
-                fontWeight: FontWeight.w600,
+                fontFamily: 'MyFontStyle',
               ),
             ),
             leading: Icon(Icons.install_mobile),
@@ -113,10 +113,10 @@ Widget downloadApp() {
           },
           child: const ListTile(
             title: Text(
-              "下载陆向谦实验室Application（github全源码链接,包括网页版）",
+              "下载陆向谦实验室Application（全源码链接,包括网页版）",
               style: TextStyle(
                 fontSize: 30.0,
-                fontWeight: FontWeight.w600,
+                fontFamily: 'MyFontStyle',
               ),
             ),
             leading: Icon(Icons.install_desktop),

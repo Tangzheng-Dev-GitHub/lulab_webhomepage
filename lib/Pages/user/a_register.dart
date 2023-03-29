@@ -28,7 +28,15 @@ class RegisterPage extends StatelessWidget {
           fit: BoxFit.fill,
         ),
       ),
-      body: Padding(
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            fit: BoxFit.fill,
+            image: NetworkImage(
+              "https://llllline.com/image/wkseller/659/Chinese-ink-and-wash-(184).jpg",
+            ),
+          ),
+        ),
         padding: const EdgeInsets.all(30.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

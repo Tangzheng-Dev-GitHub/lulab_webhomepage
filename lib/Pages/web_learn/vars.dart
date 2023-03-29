@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import 'course_viwe.dart';
+
 var card = [
   Card(
       child: SingleChildScrollView(
@@ -13,7 +15,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -25,7 +29,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -37,7 +43,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -49,7 +57,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -61,7 +71,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -73,7 +85,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -85,7 +99,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -104,7 +120,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -116,7 +134,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -128,7 +148,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -140,7 +162,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -152,7 +176,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -164,7 +190,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -176,7 +204,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -195,7 +225,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -207,7 +239,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -219,7 +253,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -231,7 +267,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -243,7 +281,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -255,7 +295,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -267,7 +309,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -286,7 +330,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -298,7 +344,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -310,7 +358,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -322,7 +372,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -334,7 +386,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -346,7 +400,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -358,7 +414,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -377,7 +435,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -389,7 +449,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -401,7 +463,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -413,7 +477,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -425,7 +491,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -437,7 +505,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),
@@ -449,7 +519,9 @@ var card = [
               Image.network("https://blogimages.jspang.com/blogtouxiang1.jpg"),
           trailing: IconButton(
             icon: const Icon(Icons.navigate_next, size: 27.0),
-            onPressed: () {},
+            onPressed: () {
+              runApp(const ThirdRoute());
+            },
           ),
         ),
         const Divider(),

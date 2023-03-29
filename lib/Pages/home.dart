@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
                         text: "在线学习",
                       ),
                       Tab(
-                        text: "企业服务",
+                        text: "陆向谦实验室",
                       ),
                       Tab(
                         text: "下载APP",
@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
                       //fontWeight: FontWeight.w400,
-                      fontSize: 22.0,
+                      fontSize: 23.5,
                       fontFamily: 'MyFontStyle',
                     ),
                     unselectedLabelColor: Colors.grey,
