@@ -17,7 +17,7 @@ Widget downloadApp() {
       const Text("\n\n"),
       Column(children: const [
         Text(
-          "下载选项：",
+          "下载选项（可能会有英文链接）：",
           style: TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.w600,

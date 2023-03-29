@@ -76,6 +76,7 @@ flutter:
     - res/hundun2.png
     - res/l1_1.png
     - res/l2_1.jpg
+    - res/codeing.png
   fonts:
     - family: MyFontStyle
       fonts:

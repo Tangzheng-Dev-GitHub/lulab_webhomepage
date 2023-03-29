@@ -4,6 +4,7 @@ import 'package:lulab_webhomepage/Widgets/searchBox.dart';
 import 'about/about_lulab.dart';
 import 'items/app.dart';
 import 'items/download_app.dart';
+import 'lab/index.dart';
 import 'user/a_login.dart';
 import 'web_learn/corse_page.dart';
 
@@ -99,9 +100,7 @@ class HomePage extends StatelessWidget {
             children: [
               SingleChildScrollView(child: all()),
               const SideListViewMenu(),
-              const Center(
-                  child:
-                      Text("404 \n 未开发！", style: TextStyle(fontSize: 100.0))),
+              const Lab(),
               SingleChildScrollView(
                 child: downloadApp(),
               ),
