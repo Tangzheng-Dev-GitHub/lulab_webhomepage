@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../home.dart';
+import '../home.dart';
 import 'a_login.dart';
 import 'temp_loading.dart';
 
