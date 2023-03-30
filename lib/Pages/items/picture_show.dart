@@ -59,7 +59,6 @@ Widget picture() {
               itemCount: imageList.length,
               // 左右箭头
               control: const SwiperControl(),
-              // 无限循环
               loop: true,
               scrollDirection: Axis.horizontal,
               // 自动轮播
