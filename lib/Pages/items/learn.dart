@@ -25,7 +25,7 @@ Widget learn() {
           backgroundColor: MaterialStateProperty.all(Colors.white),
           elevation: MaterialStateProperty.all(0),
         ),
-        child: Image.asset("res/l1_1.png"),
+        child: Image.asset("res/images/l1_1.png"),
       ),
       const Text("\n"),
       const Center(
@@ -51,7 +51,7 @@ Widget learn() {
           backgroundColor: MaterialStateProperty.all(Colors.white),
           elevation: MaterialStateProperty.all(0),
         ),
-        child: Image.asset("res/l2_1.jpg"),
+        child: Image.asset("res/images/l2_1.jpg"),
       ),
       const Text("\n\n"),
       Wrap(
@@ -61,7 +61,7 @@ Widget learn() {
           7,
           (index) => CircleAvatar(
             radius: 60.0,
-            child: Image.asset("res/lulab_logo.jpeg"),
+            child: Image.asset("res/images/lulab_logo.jpeg"),
           ),
         ),
       ),
@@ -73,7 +73,7 @@ Widget learn() {
           7,
           (index) => CircleAvatar(
             radius: 60.0,
-            child: Image.asset("res/lulab_logo.jpeg"),
+            child: Image.asset("res/images/lulab_logo.jpeg"),
           ),
         ),
       ),
@@ -85,7 +85,7 @@ Widget learn() {
           7,
           (index) => CircleAvatar(
             radius: 60.0,
-            child: Image.asset("res/lulab_logo.jpeg"),
+            child: Image.asset("res/images/lulab_logo.jpeg"),
           ),
         ),
       ),
@@ -97,7 +97,7 @@ Widget learn() {
           7,
           (index) => CircleAvatar(
             radius: 60.0,
-            child: Image.asset("res/lulab_logo.jpeg"),
+            child: Image.asset("res/images/lulab_logo.jpeg"),
           ),
         ),
       ),

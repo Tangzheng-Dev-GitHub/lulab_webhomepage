@@ -21,7 +21,7 @@ Widget peoples() {
         endIndent: 650.0,
       ),
       Image.asset(
-        'res/peoples.gif',
+        'res/images/peoples.gif',
         fit: BoxFit.fill,
       ),
     ],

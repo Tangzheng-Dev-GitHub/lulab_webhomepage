@@ -66,21 +66,24 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - res/peoples.gif
-    - res/lulab_logo.jpeg
-    - res/hundun.png
-    - res/dierquxian.png
-    - res/diyiyuanli.png
-    - res/linianshijie.png
-    - res/small.png
-    - res/hundun2.png
-    - res/l1_1.png
-    - res/l2_1.jpg
-    - res/codeing.png
+    - res/images/peoples.gif
+    - res/images/lulab_logo.jpeg
+    - res/images/hundun.png
+    - res/images/dierquxian.png
+    - res/images/diyiyuanli.png
+    - res/images/linianshijie.png
+    - res/images/small.png
+    - res/images/hundun2.png
+    - res/images/l1_1.png
+    - res/images/l2_1.jpg
+    - res/images/codeing.png
   fonts:
     - family: MyFontStyle
       fonts:
-        - asset: res/汉仪行楷简.ttf
+        - asset: res/fonts/汉仪行楷简.ttf
+    - family: col
+      fonts:
+        - asset: res/fonts/Consolas.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

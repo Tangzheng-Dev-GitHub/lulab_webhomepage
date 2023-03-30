@@ -12,7 +12,7 @@ class Lab extends StatelessWidget {
       children: [
         const Center(
           child: Text(
-            "\n\n\n陆向谦实验室宗旨：\n",
+            "\n\n\n陆向谦创新创业实验室宗旨：\n",
             style: TextStyle(
               fontSize: 20.0,
               fontFamily: 'MyFontStyle',
@@ -26,6 +26,13 @@ class Lab extends StatelessWidget {
               fontSize: 70.0,
               fontFamily: 'MyFontStyle',
             ),
+          ),
+        ),
+        const Center(
+          child: Text(
+            "Professor Luxiangqian's Internet Innovation & Engrepreneurship Lab\n",
+            style: TextStyle(
+                fontSize: 30.0, fontFamily: "col", color: Colors.green),
           ),
         ),
         labPicture(),
@@ -72,7 +79,7 @@ class Lab extends StatelessWidget {
           indent: 650.0,
           endIndent: 650.0,
         ),
-        Image.asset("res/codeing.png")
+        Image.asset("res/images/codeing.png")
       ],
     ));
   }
