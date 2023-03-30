@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:lulab_webhomepage/Widgets/searchBox.dart';
 
 import 'about/about_lulab.dart';
-import 'items/app.dart';
-import 'items/download_app.dart';
+import 'download_application/download_app.dart';
+import 'items/application.dart';
 import 'lab/index.dart';
 import 'user/a_login.dart';
-import 'web_learn/corse_page.dart';
+import 'web_learn/course_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -86,7 +86,6 @@ class HomePage extends StatelessWidget {
                     ],
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
-                      //fontWeight: FontWeight.w400,
                       fontSize: 21.5,
                       fontFamily: 'MyFontStyle',
                     ),
@@ -98,13 +97,13 @@ class HomePage extends StatelessWidget {
               )),
           body: TabBarView(
             children: [
-              SingleChildScrollView(child: all()),
+              SingleChildScrollView(child: homePage()),
               const SideListViewMenu(),
               const Lab(),
               SingleChildScrollView(
                 child: downloadApp(),
               ),
-              SingleChildScrollView(child: alulab())
+              SingleChildScrollView(child: aboutLulab())
             ],
           ),
         ),

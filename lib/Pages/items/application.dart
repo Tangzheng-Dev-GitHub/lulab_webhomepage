@@ -6,7 +6,7 @@ import 'peoples.dart';
 import 'picture_show.dart';
 import 'subjects.dart';
 
-Widget all() {
+Widget homePage() {
   return Column(
     children: [
       picture(),
