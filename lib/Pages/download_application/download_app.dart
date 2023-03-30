@@ -5,7 +5,7 @@ Widget downloadApp() {
   return Column(
     children: [
       const Text("\n\n\n\n\n"),
-      Image.asset("res/lulab_logo.jpeg"),
+      Image.asset("res/images/lulab_logo.jpeg"),
       const Text("\n\n\n\n\n"),
       const Text(
         "下载陆向谦实验室Application",
