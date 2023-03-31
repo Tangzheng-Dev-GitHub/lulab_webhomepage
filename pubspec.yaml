@@ -1,4 +1,4 @@
-name: lulab_webhomepage
+name: lulabHomePage
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -41,7 +41,6 @@ dependencies:
   video_player: ^2.6.0
   chewie: ^1.4.0
   expandable_text: ^2.3.0
-  search_widget: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -77,6 +76,8 @@ flutter:
     - res/images/l1_1.png
     - res/images/l2_1.jpg
     - res/images/codeing.png
+    - res/images/start.png
+
   fonts:
     - family: MyFontStyle
       fonts:
@@ -84,6 +85,9 @@ flutter:
     - family: col
       fonts:
         - asset: res/fonts/Consolas.ttf
+    - family: han
+      fonts:
+        - asset: res/fonts/han.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
