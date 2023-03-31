@@ -11,17 +11,14 @@ Widget downloadApp() {
         "下载陆向谦实验室Application",
         style: TextStyle(
           fontSize: 50.0,
-          fontFamily: 'MyFontStyle',
+          fontFamily: 'han',
         ),
       ),
       const Text("\n\n"),
       Column(children: const [
         Text(
           "下载选项（可能会有英文链接）：",
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.w600,
-          ),
+          style: TextStyle(fontSize: 20.0, fontFamily: "MyFontStyle"),
         ),
       ]),
       const Text("\n\n\n\n\n"),

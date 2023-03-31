@@ -7,10 +7,13 @@ List<Map> imageList = [
     "url":
         "https://p3.itc.cn/mpbp/pro/20211013/e65ab76c35d44db4b30551f9281eabfe.png"
   },
-  {"url": "https://www.daxuecn.com/imgs/20140306/17_29010.jpg"},
   {
     "url":
-        "https://news.gsau.edu.cn/_mediafile/gsau_news2016/2014/04/18/2yicgiar62.jpg"
+        "https://th.bing.com/th/id/OIP.ed9Cg2nr7vjDa0HPFmJ_lwHaEi?pid=ImgDet&rs=1"
+  },
+  {
+    "url":
+        "https://th.bing.com/th/id/R.3cee1f1c94dcc844aae574828c770cf3?rik=I%2bky8xynHrLzbA&riu=http%3a%2f%2fi1.sinaimg.cn%2fcj%2fleadership%2fsxydt%2f20080910%2fU453P31T1D5293461F6001DT20080910191531.jpg&ehk=OwHnNHpxDIFnCW8yqycd43ya1cDXs9oM11tXQEZglF0%3d&risl=&pid=ImgRaw&r=0"
   },
   {
     "url":
@@ -52,13 +55,12 @@ Widget picture() {
                 // 配置图片地址
                 return Image.network(
                   imageList[index]["url"],
-                  fit: BoxFit.fill,
                 );
               },
               // 配置图片数量
               itemCount: imageList.length,
               // 左右箭头
-              control: const SwiperControl(),
+              //control: const SwiperControl(),
               loop: true,
               scrollDirection: Axis.horizontal,
               // 自动轮播

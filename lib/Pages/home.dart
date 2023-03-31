@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:lulab_webhomepage/Widgets/searchBox.dart';
 
+import '../Widgets/downMeun.dart';
 import 'about/about_lulab.dart';
 import 'download_application/download_app.dart';
 import 'items/application.dart';
 import 'lab/index.dart';
-import 'user/a_login.dart';
 import 'web_learn/course_page.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  String value = "1";
+  selectChange(value) {
+    print("值改变了：$value");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,30 +39,29 @@ class HomePage extends StatelessWidget {
                     "https://p1.ssl.qhmsg.com/t01c3b81fccea47f580.jpg",
                     fit: BoxFit.cover),
                 actions: [
-                  const SearchBox(),
-                  TextButton(
-                    style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.yellow.shade600),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50.0),
-                        ),
-                      ),
-                      minimumSize:
-                          MaterialStateProperty.all(const Size(100, 30)),
-                      padding: MaterialStateProperty.all(EdgeInsets.zero),
-                    ),
-                    onPressed: () {
-                      runApp(const LoginPage());
-                    },
-                    child: const Text(
-                      '登陆',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                  Center(
+                    child: TextButton(
+                        onPressed: () {
+                          SelectWidget(
+                            items: [
+                              MenuItem(label: "张飞", value: '1'),
+                              MenuItem(label: "关羽", value: '2'),
+                              MenuItem(label: "刘备", value: '3'),
+                              MenuItem(label: "圆头儿子", value: '4'),
+                              MenuItem(label: "大头爸爸", value: '5'),
+                              MenuItem(label: "小头妈妈", value: '6'),
+                            ],
+                            value: value,
+                            valueChanged: selectChange,
+                          );
+                        },
+                        child: const Text(
+                          "我想调整此页面的语言      ",
+                          style: TextStyle(
+                              fontSize: 15.0,
+                              fontFamily: "han",
+                              color: Colors.black),
+                        )),
                   ),
                 ],
                 centerTitle: true,

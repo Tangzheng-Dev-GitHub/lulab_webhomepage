@@ -69,7 +69,7 @@ class _ThirdRouteState extends State<ThirdRoute> {
                           icon: const Icon(Icons.navigate_before_outlined,
                               size: 27.0),
                           onPressed: () {
-                            runApp(const HomePage());
+                            runApp(HomePage());
                           }),
                       onTap: () => Navigator.pop(context),
                     ), //左侧按钮
