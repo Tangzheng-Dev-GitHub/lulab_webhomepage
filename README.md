@@ -18,7 +18,7 @@ https://www.hundun.cn/
 git地址为github，请开翻墙器使用
 
 
-支持windows,macOS,Linux,iOS和Android
+支持~~windows,macOS,Linux~~,iOS和Android
 
 
 网页端Debug的时候可能会有error，建议用google或Edge浏览器
