@@ -3,7 +3,7 @@ import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import '../home.dart';
+import '../../home.dart';
 
 class ThirdRoute extends StatefulWidget {
   const ThirdRoute({
@@ -69,7 +69,7 @@ class _ThirdRouteState extends State<ThirdRoute> {
                           icon: const Icon(Icons.navigate_before_outlined,
                               size: 27.0),
                           onPressed: () {
-                            runApp(HomePage());
+                            runApp(const HomePage());
                           }),
                       onTap: () => Navigator.pop(context),
                     ), //左侧按钮

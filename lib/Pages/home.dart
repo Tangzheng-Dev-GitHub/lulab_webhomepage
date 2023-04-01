@@ -1,10 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'about/about_lulab.dart';
-import 'download_application/download_app.dart';
-import 'items/application.dart';
-import 'lab/index.dart';
-import 'web_learn/course_page.dart';
+import 'chinese/about/about_lulab.dart';
+import 'chinese/download_application/download_app.dart';
+import 'chinese/items/application.dart';
+import 'chinese/lab/index.dart';
+import 'chinese/web_learn/course_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -37,7 +38,73 @@ class HomePage extends StatelessWidget {
                 actions: [
                   Center(
                     child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) => CupertinoAlertDialog(
+                                    title: const Text(
+                                      "请选择此页面的语言",
+                                      style: TextStyle(
+                                          fontSize: 20.0,
+                                          fontFamily: "MyFontStyle",
+                                          color: Colors.black),
+                                    ),
+                                    content: const Text(
+                                        "\n请在以下两种语言中选择\n(若想取消此操作，点击任意位置以继续)"),
+                                    actions: [
+                                      CupertinoDialogAction(
+                                        child: const Text(
+                                          "  汉语(中国大陆)  ",
+                                          style: TextStyle(
+                                              fontSize: 20.0,
+                                              fontFamily: "MyFontStyle",
+                                              color: Colors.black),
+                                        ),
+                                        onPressed: () {
+                                          showDialog(
+                                            context: context,
+                                            builder: (BuildContext context) {
+                                              return const Dialog(
+                                                child: Padding(
+                                                  padding: EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    "请耐心等待此功能的开发吧！（目前只支持中文页面，点击任意位置以继续）",
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                ),
+                                              );
+                                            },
+                                          );
+                                        },
+                                      ),
+                                      CupertinoDialogAction(
+                                        child: const Text(
+                                          "  English(USA)  ",
+                                          style: TextStyle(
+                                              fontSize: 20.0,
+                                              fontFamily: "col",
+                                              color: Colors.black),
+                                        ),
+                                        onPressed: () {
+                                          showDialog(
+                                            context: context,
+                                            builder: (BuildContext context) {
+                                              return const Dialog(
+                                                child: Padding(
+                                                  padding: EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    "请耐心等待此功能的开发吧！（目前只支持中文页面，点击任意位置以继续）",
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                ),
+                                              );
+                                            },
+                                          );
+                                        },
+                                      ),
+                                    ],
+                                  ));
+                        },
                         child: const Text(
                           "我想调整此页面的语言      ",
                           style: TextStyle(
