@@ -19,40 +19,56 @@ Widget learn() {
         indent: 650.0,
         endIndent: 650.0,
       ),
-      ElevatedButton(
-        onPressed: () {},
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.white),
-          elevation: MaterialStateProperty.all(0),
-        ),
-        child: Image.asset("res/images/l1_1.png"),
-      ),
       const Text("\n"),
-      const Center(
-        child: Text(
-          "\n 企业学习",
-          style: TextStyle(
-            fontSize: 40.0,
-            fontWeight: FontWeight.w600,
+      Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              fit: BoxFit.fill,
+              image: NetworkImage(
+                "https://img.51miz.com/Element/00/70/02/00/bf9e00cb_E700200_ab675214.jpg",
+              ),
+            ),
           ),
-        ),
-      ),
-      const Text("\n"),
-      const Divider(
-        height: 10.0,
-        color: Colors.green,
-        thickness: 5.0,
-        indent: 650.0,
-        endIndent: 650.0,
-      ),
-      ElevatedButton(
-        onPressed: () {},
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.white),
-          elevation: MaterialStateProperty.all(0),
-        ),
-        child: Image.asset("res/images/l2_1.jpg"),
-      ),
+          child: Column(
+            children: const [
+              Center(
+                child: Text(
+                  "这里有\n",
+                  style: TextStyle(
+                    fontSize: 70.0,
+                    fontFamily: 'han',
+                  ),
+                ),
+              ),
+              Center(
+                child: Text(
+                  "前沿的教育理念\n",
+                  style: TextStyle(
+                    fontSize: 70.0,
+                    fontFamily: 'han',
+                  ),
+                ),
+              ),
+              Center(
+                child: Text(
+                  "你将收获\n",
+                  style: TextStyle(
+                    fontSize: 70.0,
+                    fontFamily: 'han',
+                  ),
+                ),
+              ),
+              Center(
+                child: Text(
+                  "独一无二的实践机会\n",
+                  style: TextStyle(
+                    fontSize: 70.0,
+                    fontFamily: 'han',
+                  ),
+                ),
+              ),
+            ],
+          )),
       const Text("\n\n"),
       Wrap(
         spacing: 8.0, // 项之间的水平间距

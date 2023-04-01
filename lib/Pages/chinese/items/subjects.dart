@@ -85,9 +85,9 @@ Widget subjects() {
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             children: [
-              _buildLTItem("创新院", "\nCEO的认知高地",
+              _buildLTItem("少年班", "\n在原宇宙里玩游戏\n",
                   "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-              _buildLTItem('文理院', "\n至文   至理   至博雅",
+              _buildLTItem('工业班', "\n做项目和Codeing",
                   "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
             ],
           )),
@@ -99,9 +99,9 @@ Widget subjects() {
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             children: [
-              _buildLTItem("在线学籍", "\n商业创新必修课",
+              _buildLTItem("营销组", "\n商业创新必修课，迎接新成员加入",
                   "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-              _buildLTItem('创商院', "\n创始人和团队的共学场",
+              _buildLTItem('领导力俱乐部', "\n创始人和团队的共学场",
                   "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
             ],
           ))
