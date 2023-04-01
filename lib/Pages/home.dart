@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'chinese/about/about_lulab.dart';
-import 'chinese/download_application/download_app.dart';
-import 'chinese/items/application.dart';
-import 'chinese/lab/index.dart';
-import 'chinese/web_learn/course_page.dart';
+import './web_learn/course_page.dart';
+import 'about/about_lulab.dart';
+import 'download_application/download_app.dart';
+import 'items/application.dart';
+import 'lab/index.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -26,12 +26,14 @@ class HomePage extends StatelessWidget {
               preferredSize: const Size.fromHeight(kToolbarHeight * 1.25),
               child: AppBar(
                 backgroundColor: Colors.white,
-                leading: Align(
-                    alignment: Alignment.center,
-                    child: Image.network(
-                      "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
-                      fit: BoxFit.fill,
-                    )),
+                leading: Row(children: [
+                  Align(
+                      alignment: Alignment.center,
+                      child: Image.network(
+                        "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
+                        fit: BoxFit.fill,
+                      ))
+                ]),
                 flexibleSpace: Image.network(
                     "https://p1.ssl.qhmsg.com/t01c3b81fccea47f580.jpg",
                     fit: BoxFit.cover),
@@ -106,7 +108,7 @@ class HomePage extends StatelessWidget {
                                   ));
                         },
                         child: const Text(
-                          "我想调整此页面的语言      ",
+                          "adjust the language     ",
                           style: TextStyle(
                               fontSize: 15.0,
                               fontFamily: "han",
@@ -120,25 +122,25 @@ class HomePage extends StatelessWidget {
                     isScrollable: true,
                     tabs: [
                       Tab(
-                        text: "首页",
+                        text: "Home",
                       ),
                       Tab(
-                        text: "在线学习",
+                        text: "Online learning",
                       ),
                       Tab(
-                        text: "陆向谦实验室",
+                        text: "LuLab",
                       ),
                       Tab(
-                        text: "下载APP",
+                        text: "download APP",
                       ),
                       Tab(
-                        text: "关于",
+                        text: "about us",
                       ),
                     ],
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
                       fontSize: 21.5,
-                      fontFamily: 'MyFontStyle',
+                      fontFamily: 'han',
                     ),
                     unselectedLabelColor: Colors.grey,
                     indicatorColor: Colors.yellow,

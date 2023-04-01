@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_swiper_plus: ^2.0.4
   url_launcher: ^6.0.9
-  flutter_swiper :  ^1.1.6
+  #flutter_swiper :  ^1.1.6
   video_player: ^2.6.0
   chewie: ^1.4.0
   expandable_text: ^2.3.0
@@ -65,18 +65,12 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - res/images/peoples.gif
     - res/images/lulab_logo.jpeg
-    - res/images/hundun.png
     - res/images/dierquxian.png
     - res/images/diyiyuanli.png
     - res/images/linianshijie.png
-    - res/images/small.png
-    - res/images/hundun2.png
-    - res/images/l1_1.png
-    - res/images/l2_1.jpg
     - res/images/codeing.png
-    - res/images/start.png
+    - res/images/xuanchuanpian.mp4
 
   fonts:
     - family: MyFontStyle
