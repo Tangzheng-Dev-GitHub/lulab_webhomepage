@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'LuLab: 聚天下名师英才组团玩',
+      title: 'Lu Lab: 聚天下名师英才组团玩',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -128,7 +128,7 @@ class HomePage extends StatelessWidget {
                         text: "Online learning",
                       ),
                       Tab(
-                        text: "LuLab",
+                        text: "Lu Lab",
                       ),
                       Tab(
                         text: "download APP",
@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
                     ],
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
-                      fontSize: 21.5,
+                      fontSize: 27.5,
                       fontFamily: 'han',
                     ),
                     unselectedLabelColor: Colors.grey,
@@ -156,7 +156,7 @@ class HomePage extends StatelessWidget {
               SingleChildScrollView(
                 child: downloadApp(),
               ),
-              SingleChildScrollView(child: aboutLulab())
+              SingleChildScrollView(child: aboutLulab(context))
             ],
           ),
         ),
