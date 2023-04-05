@@ -2,22 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper_plus/flutter_swiper_plus.dart';
 
 List<Map> imageList = [
-  {
-    "url":
-        "https://p3.itc.cn/mpbp/pro/20211013/e65ab76c35d44db4b30551f9281eabfe.png"
-  },
-  {
-    "url":
-        "https://th.bing.com/th/id/OIP.ed9Cg2nr7vjDa0HPFmJ_lwHaEi?pid=ImgDet&rs=1"
-  },
-  {
-    "url":
-        "https://th.bing.com/th/id/R.3cee1f1c94dcc844aae574828c770cf3?rik=I%2bky8xynHrLzbA&riu=http%3a%2f%2fi1.sinaimg.cn%2fcj%2fleadership%2fsxydt%2f20080910%2fU453P31T1D5293461F6001DT20080910191531.jpg&ehk=OwHnNHpxDIFnCW8yqycd43ya1cDXs9oM11tXQEZglF0%3d&risl=&pid=ImgRaw&r=0"
-  },
-  {
-    "url":
-        "https://10.idqqimg.com/qqcourse_logo_ng/ajNVdqHZLLBiaiacbkrb8DD9H7tvicf5YicDqoW0kT4NibnPLCbwLsE2V5ftDkcaL7iapZBzMGCL3iaFlQ/"
-  }
+  {"url": "res/images/image1.jpg"},
+  {"url": "res/images/image2.jpg"},
+  {"url": "res/images/image3.jpg"},
+  {"url": "res/images/image4.jpg"}
 ];
 
 Widget picture() {
@@ -52,21 +40,30 @@ Widget picture() {
               ),
               itemBuilder: (BuildContext context, int index) {
                 // 配置图片地址
-                return Image.network(
-                  imageList[index]["url"],
-                );
+                return Image.asset(imageList[index]["url"],
+                    fit: BoxFit.fitWidth);
               },
               // 配置图片数量
               itemCount: imageList.length,
-              // 左右箭头
-              //control: const SwiperControl(),
               loop: true,
               scrollDirection: Axis.horizontal,
               // 自动轮播
               autoplay: true,
               duration: 300),
         ),
-      )
+      ),
+      Column(children: const [
+        Text(
+          " \nWelcome to Lu Lab\n",
+          style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
+        ),
+        Text(
+          " Stepping out of the ivory tower of Tsinghua University, \nallowing everyone the opportunity to receive high-quality education,\n and nurturing talents for the innovative era\n\n\n\n",
+          style: TextStyle(
+            fontSize: 25.0,
+          ),
+        ),
+      ])
     ],
   );
 }

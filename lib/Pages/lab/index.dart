@@ -96,28 +96,29 @@ class Lab extends StatelessWidget {
         const Center(
           child: Text(
             '''\n\n\n\n
-    Overview
-    In 1994, convinced that the Internet would upend the world, Professor Lu Xiangqian created a laboratory to practice his educational methods:
-    1. Unconventional self-actualization
-    2.
-    It is better to learn theory than to learn cases;
-    It is better to learn cases than to make cases;
-    It is better to make a case than to play a case;
-    One person is not as good as several;
-    A few people to play is not as good as gathering the world's elite masters to play in a group.
+            Overview
+            In 1994, convinced that the Internet would upend the world, Professor Lu Xiangqian created a laboratory to practice his educational methods:
+            1. Unconventional self-actualization
+            2.
+            It is better to learn theory than to learn cases;
+            It is better to learn cases than to make cases;
+            It is better to make a case than to play a case;
+            One person is not as good as several;
+            A few people to play is not as good as gathering the world's elite masters to play in a group.
 
-    industry
-    Vocational training and guidance
-    scale
-    2-10 employees
-    There are 6 bits on the LinkedIn
-    Including current employers who are members of Lu Xiangqian Laboratory, including part-time employees.
-    headquarters
-    California, Silicon Valley
-    Founded
-    1994,\n\n''',
+            industry
+            Vocational training and guidance
+            scale
+            2-10 employees
+            There are 6 bits on the LinkedIn
+            Including current employers who are members of Lu Xiangqian Laboratory, including part-time employees.
+            headquarters
+            California, Silicon Valley
+            Founded
+            1994,\n\n''',
             style: TextStyle(
-                fontSize: 30.0, fontFamily: 'MyFontStyle', color: Colors.black),
+                fontSize: 20.0,
+                /*fontFamily* 'MyFontStyle',*/ color: Colors.black),
           ),
         ),
         Center(
@@ -130,7 +131,7 @@ class Lab extends StatelessWidget {
               "Learn more...",
               style: TextStyle(
                   fontSize: 15.0,
-                  fontFamily: 'MyFontStyle',
+                  //fontFamily: 'MyFontStyle',
                   color: Colors.black),
             ),
           ),

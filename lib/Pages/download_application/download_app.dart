@@ -8,7 +8,7 @@ Widget downloadApp() {
       Image.asset("res/images/lulab_logo.jpeg"),
       const Text("\n\n\n\n\n"),
       const Text(
-        "Download the Lu Xiangqian Lab Application",
+        "Download the Lu Lab Application",
         style: TextStyle(
           fontSize: 50.0,
           fontFamily: 'han',

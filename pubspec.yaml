@@ -38,13 +38,15 @@ dependencies:
   flutter_swiper_plus: ^2.0.4
   url_launcher: ^6.0.9
   #flutter_swiper :  ^1.1.6
-  video_player: ^2.6.0
+  video_player: 2.6.1
   chewie: ^1.4.0
   expandable_text: ^2.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  #build_runner: ^2.4.0
+  #build_web_compilers: ^4.0.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -71,6 +73,12 @@ flutter:
     - res/images/linianshijie.png
     - res/images/codeing.png
     - res/images/xuanchuanpian.mp4
+    - res/images/image1.jpg
+    - res/images/image2.jpg
+    - res/images/image3.jpg
+    - res/images/image4.jpg
+    - res/images/laa.png
+    - res/images/start.gif
 
   fonts:
     - family: MyFontStyle

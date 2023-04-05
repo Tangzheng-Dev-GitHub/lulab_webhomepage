@@ -49,16 +49,16 @@ Widget ea() {
             "\n    Company Name: Shishu New Mileage Technology (Beijing) Co., Ltd",
             textAlign: TextAlign.left,
             style: TextStyle(
-              fontSize: 20.0,
-              fontFamily: 'MyFontStyle',
+              fontSize: 18.0,
+              fontFamily: 'col',
             ),
           ),
           Text(
             "\n    Contact us：business@proflu.cn\n\n",
             textAlign: TextAlign.left,
             style: TextStyle(
-              fontSize: 20.0,
-              fontFamily: 'MyFontStyle',
+              fontSize: 18.0,
+              fontFamily: 'col',
             ),
           )
         ],

@@ -10,6 +10,7 @@ Widget homePage() {
     children: [
       picture(),
       subjects(),
+      const Text("\n\n\n\n\n\n"),
       learn(),
       ea(),
     ],

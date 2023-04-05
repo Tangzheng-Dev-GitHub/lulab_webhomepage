@@ -84,7 +84,7 @@ class _SideListViewMenuState extends State<SideListViewMenu> {
                 child: Column(children: [
               card[_selectedIdx],
               const Text(
-                "\n\n想看更多课程？",
+                "\n\nWant to watch more classes？",
                 style: TextStyle(
                   color: Colors.red,
                   fontSize: 30.0,
@@ -92,7 +92,7 @@ class _SideListViewMenuState extends State<SideListViewMenu> {
                 ),
               ),
               const Text(
-                "\n下载陆向谦实验室超级APP\n\n\n\n",
+                "\nDownload the Lu Lab APP\n\n\n\n",
                 style: TextStyle(
                     fontFamily: 'han', color: Colors.red, fontSize: 50.0),
               ),
