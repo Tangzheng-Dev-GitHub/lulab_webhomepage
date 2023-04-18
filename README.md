@@ -1,25 +1,22 @@
-# 陆向前实验室官网首页
-# git地址：
-```
-https://github.com/Tangzheng-Dev-GitHub/lulab_webhomepage
-```
+# 陆向谦实验室(LuLab)官网首页
+## 基于Google Flutter 实现的网站（未部署）
+此网站由陆向谦实验室技术人员开发
+# version 1即将推出，敬请期待
 
-资源和参考：
-```
-https://github.com/Tangzheng-Dev-GitHub/lulab_webhomepage
-https://gitee.com/proflu/LuLab_frontend/tree/develop-test/
-https://www.hundun.cn/
-```
-
-### 注意事项：
-暂时是静态页面，没有数据
+### 贡献者：
+产品总经理:zhang chen
+内容提供:zhang chen
+技术开发:tang zheng
+技术支持:yang shiming
 
 
-git地址为github，请开翻墙器使用
+# The homepage of the official website of LuLab
+## Google Flutter implementation website (not deployed)
+This website is developed by Lu Xiangqian laboratory technicians
+# version 1 is coming soon, so stay tuned
 
-
-支持~~windows,macOS,Linux~~,iOS和Android
-
-
-网页端Debug的时候可能会有error，建议用google或Edge浏览器
-......
+### Contributor:
+Product General Manager :zhang chen
+Provided by :zhang chen
+Technical Development :tang zheng
+Technical Support :yang shiming
