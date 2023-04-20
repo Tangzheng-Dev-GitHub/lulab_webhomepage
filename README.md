@@ -8,7 +8,7 @@
 
 内容提供:zhang chen
 
-技术开发:tang zheng
+技术开发:tang zheng, shen yinhang
 
 技术支持:yang shiming
 
@@ -23,7 +23,7 @@ Product General Manager :zhang chen
 
 Provided by :zhang chen
 
-Technical Development :tang zheng
+Technical Development :tang zheng, shen yinhang
 
 Technical Support :yang shiming
 
