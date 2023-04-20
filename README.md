@@ -26,3 +26,19 @@ Provided by :zhang chen
 Technical Development :tang zheng
 
 Technical Support :yang shiming
+
+
+# 资源提供（resource）：
+
+```
+https://www.flutter.dev
+https://developer.android.google.cn/studio/
+https://www.google.cn/intl/zh-CN/chrome/
+https://www.hundun.cn
+可能需要注册(login):
+https://www.linkedin.com/company/proflu/?viewAsMember=true
+https://www.apple.com.cn
+https://www.jetbrains.com
+```
+
+
