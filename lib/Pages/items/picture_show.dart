@@ -52,7 +52,7 @@ Widget picture() {
               duration: 300),
         ),
       ),
-      const Column(children: [
+      Column(children: const [
         Text(
           " \nWelcome to Lu Lab\n",
           style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
