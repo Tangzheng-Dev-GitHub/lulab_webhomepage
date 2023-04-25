@@ -147,7 +147,7 @@ Widget subjects() {
           const Text("\n"),
           Container(
               decoration: const BoxDecoration(color: Colors.white),
-              child: Column(children: const [
+              child: Column(children: [
                 Center(
                   child: Text(
                     "\nBeyond the Ordinary",
