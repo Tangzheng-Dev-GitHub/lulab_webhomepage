@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import './web_learn/course_page.dart';
 import 'about/about_lulab.dart';
@@ -27,94 +27,28 @@ class HomePage extends StatelessWidget {
               child: AppBar(
                 backgroundColor: Colors.white,
                 leading: Row(children: [
-                  Align(
-                      alignment: Alignment.center,
-                      child: Image.network(
-                        "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
-                        fit: BoxFit.fill,
-                      ))
+                  Image.network(
+                    "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
+                    fit: BoxFit.fill,
+                  ),
                 ]),
                 flexibleSpace: Image.network(
                     "https://p1.ssl.qhmsg.com/t01c3b81fccea47f580.jpg",
                     fit: BoxFit.cover),
                 actions: [
                   Center(
-                    child: TextButton(
-                        onPressed: () {
-                          showDialog(
-                              context: context,
-                              builder: (context) => CupertinoAlertDialog(
-                                    title: const Text(
-                                      "请选择此页面的语言",
-                                      style: TextStyle(
-                                          fontSize: 20.0,
-                                          fontFamily: "MyFontStyle",
-                                          color: Colors.black),
-                                    ),
-                                    content: const Text(
-                                        "\n请在以下两种语言中选择\n(若想取消此操作，点击任意位置以继续)"),
-                                    actions: [
-                                      CupertinoDialogAction(
-                                        child: const Text(
-                                          "  汉语(中国大陆)  ",
-                                          style: TextStyle(
-                                              fontSize: 20.0,
-                                              fontFamily: "MyFontStyle",
-                                              color: Colors.black),
-                                        ),
-                                        onPressed: () {
-                                          showDialog(
-                                            context: context,
-                                            builder: (BuildContext context) {
-                                              return const Dialog(
-                                                child: Padding(
-                                                  padding: EdgeInsets.all(8.0),
-                                                  child: Text(
-                                                    "请耐心等待此功能的开发吧！（目前只支持中文页面，点击任意位置以继续）",
-                                                    textAlign: TextAlign.center,
-                                                  ),
-                                                ),
-                                              );
-                                            },
-                                          );
-                                        },
-                                      ),
-                                      CupertinoDialogAction(
-                                        child: const Text(
-                                          "  English(USA)  ",
-                                          style: TextStyle(
-                                              fontSize: 20.0,
-                                              fontFamily: "col",
-                                              color: Colors.black),
-                                        ),
-                                        onPressed: () {
-                                          showDialog(
-                                            context: context,
-                                            builder: (BuildContext context) {
-                                              return const Dialog(
-                                                child: Padding(
-                                                  padding: EdgeInsets.all(8.0),
-                                                  child: Text(
-                                                    "请耐心等待此功能的开发吧！（目前只支持中文页面，点击任意位置以继续）",
-                                                    textAlign: TextAlign.center,
-                                                  ),
-                                                ),
-                                              );
-                                            },
-                                          );
-                                        },
-                                      ),
-                                    ],
-                                  ));
-                        },
-                        child: const Text(
-                          "adjust the language     ",
-                          style: TextStyle(
-                              fontSize: 15.0,
-                              fontFamily: "han",
-                              color: Colors.black),
-                        )),
-                  ),
+                      child: TextButton(
+                    child: const Text(
+                      "Powered by Flutter Web and Dart    ",
+                      style: TextStyle(
+                          fontSize: 15.0,
+                          fontFamily: "han",
+                          color: Colors.black),
+                    ),
+                    onPressed: () {
+                      launch("https://flutter.dev/");
+                    },
+                  ))
                 ],
                 centerTitle: true,
                 elevation: 5.0,
