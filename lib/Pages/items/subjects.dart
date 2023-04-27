@@ -61,7 +61,7 @@ class _MyVideoPlayerState extends State<MyVideoPlayer> {
     _controller = VideoPlayerController.asset("res/images/xuanchuanpian.mp4");
     videoChewieController = ChewieController(
       videoPlayerController: _controller,
-      aspectRatio: 5 / 4,
+      aspectRatio: 13 / 6,
     );
   }
 
@@ -73,19 +73,16 @@ class _MyVideoPlayerState extends State<MyVideoPlayer> {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-        alignment: Alignment.topLeft,
-        child: AspectRatio(
-          aspectRatio: _controller.value.aspectRatio,
-          child: Chewie(controller: videoChewieController),
-        ));
+    return AspectRatio(
+      aspectRatio: _controller.value.aspectRatio,
+      child: Chewie(controller: videoChewieController),
+    );
   }
 }
 
 Widget subjects() {
   return Container(
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 102, 202, 106)),
+      decoration: const BoxDecoration(color: Colors.brown),
       child: Column(
         children: [
           const Center(
@@ -97,13 +94,13 @@ Widget subjects() {
                   color: Colors.white),
             ),
           ),
-          const Text("\n\n"),
+          const Text("\n"),
           const Divider(
             height: 10.0,
-            color: Color.fromARGB(255, 102, 202, 106),
+            color: Colors.green,
             thickness: 5.0,
-            indent: 630.0,
-            endIndent: 630.0,
+            indent: 650.0,
+            endIndent: 650.0,
           ),
           // GridView.count(
           //   crossAxisCount: 3,
@@ -148,15 +145,10 @@ Widget subjects() {
           //       ],
           //     ))
           const Text("\n"),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Container(
-              height: 260,
-              width: 660,
+          Container(
               decoration: const BoxDecoration(color: Colors.white),
               child: Column(children: const [
-                Padding(
-                  padding: EdgeInsets.all(0),
+                Center(
                   child: Text(
                     "\nBeyond the Ordinary",
                     style: TextStyle(
@@ -168,16 +160,14 @@ Widget subjects() {
                 Text("\n\n"),
                 Text(
                   '''
-                    How can you get a feel for our extraordinary online Lab?               
-                    Hear what some of our students and instructors have to say                
-                    about our school's strengths.    
-                    \n
-                    ''',
+                  How can you get a feel for our extraordinary online Lab? 
+                  Hear what some of our students and instructors have to say 
+                  about our school's strengths.
+                  \n
+                  ''',
                   style: TextStyle(fontSize: 20.0, color: Colors.black),
                 ),
-              ]),
-            ),
-          ),
+              ])),
           Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
