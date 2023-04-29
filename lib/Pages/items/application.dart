@@ -12,7 +12,7 @@ Widget homePage() {
       subjects(),
       const Text("\n\n\n\n\n\n"),
       learn(),
-      const Text("\n\n\n\n\n\n"),
+      const Text("\n\n\n\n"),
       ea(),
     ],
   );

@@ -44,6 +44,7 @@ import 'package:video_player/video_player.dart';
 //     )
 //   ]);
 // }
+
 class MyVideoPlayer extends StatefulWidget {
   const MyVideoPlayer({super.key});
 
@@ -84,8 +85,7 @@ class _MyVideoPlayerState extends State<MyVideoPlayer> {
 
 Widget subjects() {
   return Container(
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 102, 202, 106)),
+      decoration: const BoxDecoration(color: Color.fromARGB(255, 0, 176, 0)),
       child: Column(
         children: [
           const Center(
@@ -98,13 +98,13 @@ Widget subjects() {
             ),
           ),
           const Text("\n\n"),
-          const Divider(
-            height: 10.0,
-            color: Color.fromARGB(255, 102, 202, 106),
-            thickness: 5.0,
-            indent: 630.0,
-            endIndent: 630.0,
-          ),
+          // const Divider(
+          //   height: 10.0,
+          //   color: Color.fromARGB(255, 34, 37, 43),
+          //   thickness: 5.0,
+          //   indent: 630.0,
+          //   endIndent: 630.0,
+          // ),
           // GridView.count(
           //   crossAxisCount: 3,
           //   shrinkWrap: true,
@@ -119,34 +119,6 @@ Widget subjects() {
           //   ],
           // ),
           // const Text("\n\n\n\n"),
-          // SizedBox(
-          //     height: 180.0,
-          //     width: 1000.0,
-          //     child: GridView.count(
-          //       crossAxisCount: 2,
-          //       physics: const NeverScrollableScrollPhysics(),
-          //       shrinkWrap: true,
-          //       children: [
-          //         _buildLTItem("少年班", "\n",
-          //             "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-          //         _buildLTItem('工业班', "\n",
-          //             "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-          //       ],
-          //     )),
-          // SizedBox(
-          //     height: 180.0,
-          //     width: 1000.0,
-          //     child: GridView.count(
-          //       crossAxisCount: 2,
-          //       physics: const NeverScrollableScrollPhysics(),
-          //       shrinkWrap: true,
-          //       children: [
-          //         _buildLTItem("营销部", "\n",
-          //             "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-          //         _buildLTItem('领导力俱乐部', "\n",
-          //             "https://tse2-mm.cn.bing.net/th/id/OIP-C.u-cVSLaHLaT5qddtc7mOfQAAAA?pid=ImgDet&rs=1"),
-          //       ],
-          //     ))
           const Text("\n"),
           Align(
             alignment: Alignment.centerRight,
@@ -160,12 +132,12 @@ Widget subjects() {
                   child: Text(
                     "\nBeyond the Ordinary",
                     style: TextStyle(
-                        fontSize: 30.0,
+                        fontSize: 32.0,
                         fontWeight: FontWeight.w600,
                         color: Colors.black),
                   ),
                 ),
-                Text("\n\n"),
+                Text("\n"),
                 Text(
                   '''
                     How can you get a feel for our extraordinary online Lab?               
@@ -186,7 +158,7 @@ Widget subjects() {
               ),
               child: const Center(
                 child: MyVideoPlayer(),
-              ))
+              )),
           // Center(
           //   child: Text(
           //     "\n Beyond the Ordinary",

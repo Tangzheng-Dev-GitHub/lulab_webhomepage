@@ -7,14 +7,17 @@ void main() {
   // ignore: null_check_always_fails
   if (kDebugMode) {
     print('''
+    Launching
     ##               ##         ##     ##                   #####            #############
     ##               ##         ##     ##                  ##    ##          ##         ##
     ##               ##         ##     ##                 ##      ##         #############
     ##               ##         ##     ##                ############        ############
     ##               ##         ##     ##               ##          ##       ##        ##
     #############    #############     #############   ##            ##      ############
+    Home Page
     ''');
     print("THE LULAB HOME WEBSITE STARTED/RESTARTED (in debug mode)");
+    print("flutter:Debug successfully");
   }
   runApp(const MaterialApp(
       debugShowCheckedModeBanner: false,
