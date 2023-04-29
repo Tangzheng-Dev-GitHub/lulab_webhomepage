@@ -56,9 +56,10 @@ Widget learn() {
                 "Promoting products or services, communicating with customers and other tasks",
                 "res/images/lulab_logo.jpeg"),
             _buildLTItem(
-                'Leadership club',
-                "An organization or program that develops leadership and management skills",
-                "res/images/lulab_logo.jpeg"),
+              'Leadership club',
+              "An organization or program that develops leadership and management skills",
+              "res/images/lulab_logo.jpeg",
+            ),
           ],
         )),
   ]);

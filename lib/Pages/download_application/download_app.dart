@@ -17,7 +17,7 @@ Widget downloadApp() {
       const Text("\n\n"),
       Column(children: const [
         Text(
-          "Download options：",
+          "Download options：(this is a testing part, the data in the app may be not true, or some parts in the app incomplete, we are extremely sorry.)",
           style: TextStyle(fontSize: 20.0, fontFamily: "MyFontStyle"),
         ),
       ]),
@@ -120,7 +120,7 @@ Widget downloadApp() {
       //       trailing: Icon(Icons.navigate_next_outlined),
       //     )),
       const Text(
-          "\n\n\n\n\n声明：陆向谦实验室Application未在GooglePlay和AppStore上传，只支持源码下载\n\n\n\n\n")
+          "\n\n\n\n\nDeclaration: Lu Lab Application has not been uploaded to GooglePlay and AppStore, and only supports source code download for the time being. Switch to the develop-test branch before downloading the source code\n\n\n\n\n")
     ],
   );
 }

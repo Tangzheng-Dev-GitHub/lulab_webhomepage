@@ -19,7 +19,7 @@ Widget aboutLulab(BuildContext context) {
                 '     Service Use Agreement',
                 style: TextStyle(
                   color: Colors.black,
-                  fontFamily: 'MyFontStyle',
+                  fontFamily: 'col',
                   fontSize: 20.0,
                 ),
               ),
@@ -37,7 +37,7 @@ Widget aboutLulab(BuildContext context) {
                 '     Privacy Policy',
                 style: TextStyle(
                   color: Colors.black,
-                  fontFamily: 'MyFontStyle',
+                  fontFamily: 'col',
                   fontSize: 20.0,
                 ),
               ),
@@ -55,7 +55,7 @@ Widget aboutLulab(BuildContext context) {
                 '     Copyright Notice',
                 style: TextStyle(
                   color: Colors.black,
-                  fontFamily: 'MyFontStyle',
+                  fontFamily: 'col',
                   fontSize: 20.0,
                 ),
               ),

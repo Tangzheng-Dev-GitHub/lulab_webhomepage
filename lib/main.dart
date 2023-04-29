@@ -17,7 +17,7 @@ void main() {
     Home Page
     ''');
     print("THE LULAB HOME WEBSITE STARTED/RESTARTED (in debug mode)");
-    print("flutter:Debug successfully");
+    print("Debug successfully");
   }
   runApp(const MaterialApp(
       debugShowCheckedModeBanner: false,

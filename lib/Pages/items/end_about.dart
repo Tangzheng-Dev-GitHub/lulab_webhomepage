@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-Widget ea() {
+Widget ea(BuildContext context) {
   return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Column(
         children: [
-          const Center(child: Divider()),
+          const Center(
+            child: Divider(),
+          ),
           Row(children: [
             Row(children: [
               const Text("        "),
-              Image.asset("res/images/lulab_logo.jpeg" ''),
+              Column(children: [
+                Image.asset("res/images/lulab_logo.jpeg" ''),
+              ]),
             ]),
             Row(children: [
               //const Text("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"),
@@ -29,7 +33,7 @@ Widget ea() {
                     ),
                     TextButton(
                       child: const Text(
-                        "\nAPP docs",
+                        "\nAPP docs(not developed)",
                         style: TextStyle(
                           fontSize: 20.5,
                         ),
@@ -84,14 +88,13 @@ Widget ea() {
                     ),
                     TextButton(
                       child: const Text(
-                        "Our Linkdin",
+                        "Tsinghua tuna mirror station",
                         style: TextStyle(
                           fontSize: 20.5,
                         ),
                       ),
                       onPressed: () {
-                        launch(
-                            "https://www.linkedin.com/company/proflu/?viewAsMember=true");
+                        launch("https://mirrors.tuna.tsinghua.edu.cn/");
                       },
                     ),
                     TextButton(
@@ -113,7 +116,7 @@ Widget ea() {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "\n\nFollow wechat official accounts \nand video accounts to get \nthe latest information",
+                      "\n\nFollow wechat official accounts \nand video accounts to get \nthe latest information\n(Scan the QR code in the dialog )",
                       style: TextStyle(
                           fontSize: 30.5,
                           fontFamily: 'han',
@@ -126,7 +129,18 @@ Widget ea() {
                           fontSize: 20.5,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return Dialog(
+                                child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Image.asset("res/images/lulabQR2.pic.jpg"),
+                            ));
+                          },
+                        );
+                      },
                     ),
                     TextButton(
                       child: const Text(
@@ -135,7 +149,18 @@ Widget ea() {
                           fontSize: 20.5,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return Dialog(
+                                child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Image.asset("res/images/lulabQR1.png"),
+                            ));
+                          },
+                        );
+                      },
                     ),
                   ])
             ])

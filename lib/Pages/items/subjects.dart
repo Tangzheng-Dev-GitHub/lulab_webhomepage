@@ -62,7 +62,7 @@ class _MyVideoPlayerState extends State<MyVideoPlayer> {
     _controller = VideoPlayerController.asset("res/images/xuanchuanpian.mp4");
     videoChewieController = ChewieController(
       videoPlayerController: _controller,
-      aspectRatio: 5 / 4,
+      aspectRatio: 16 / 9,
     );
   }
 
@@ -121,13 +121,13 @@ Widget subjects() {
           // const Text("\n\n\n\n"),
           const Text("\n"),
           Align(
-            alignment: Alignment.centerRight,
+            alignment: Alignment.center,
             child: Container(
               height: 260,
               width: 660,
               decoration: const BoxDecoration(color: Colors.white),
-              child: Column(children: const [
-                Padding(
+              child: Column(children: [
+                const Padding(
                   padding: EdgeInsets.all(0),
                   child: Text(
                     "\nBeyond the Ordinary",
@@ -137,16 +137,22 @@ Widget subjects() {
                         color: Colors.black),
                   ),
                 ),
-                Text("\n"),
-                Text(
+                const Text("\n"),
+                const Text(
                   '''
-                    How can you get a feel for our extraordinary online Lab?               
-                    Hear what some of our students and instructors have to say                
-                    about our school's strengths.    
-                    \n
+          How can you get a feel for our extraordinary online Lab?                   
+          Hear what some of our students and instructors have to say                
+          about our school's strengths.                               
                     ''',
-                  style: TextStyle(fontSize: 20.0, color: Colors.black),
+                  style: TextStyle(fontSize: 20.995, color: Colors.black),
                 ),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    '''Scroll down, click the logo to to watch the video >>\n''',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                )
               ]),
             ),
           ),
@@ -158,7 +164,8 @@ Widget subjects() {
               ),
               child: const Center(
                 child: MyVideoPlayer(),
-              )),
+              ))
+
           // Center(
           //   child: Text(
           //     "\n Beyond the Ordinary",

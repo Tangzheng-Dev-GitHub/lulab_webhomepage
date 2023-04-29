@@ -78,6 +78,10 @@ flutter:
     - res/images/image4.jpg
     - res/images/laa.png
     - res/images/start.gif
+    - res/images/lulabQR1.png
+    - res/images/lulabQR2.pic.jpg
+    - res/images/4O6epeFOyp.jpg
+    - res/images/ysm.png
 
   fonts:
     - family: MyFontStyle

@@ -29,8 +29,8 @@ class HomePage extends StatelessWidget {
                 leading: Row(children: [
                   Image.network(
                     "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
-                    fit: BoxFit.fill,
-                  ),
+                    fit: BoxFit.cover,
+                  )
                 ]),
                 flexibleSpace: Image.network(
                     "https://p1.ssl.qhmsg.com/t01c3b81fccea47f580.jpg",
@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
               )),
           body: TabBarView(
             children: [
-              SingleChildScrollView(child: homePage()),
+              SingleChildScrollView(child: homePage(context)),
               const SideListViewMenu(),
               const Lab(),
               SingleChildScrollView(

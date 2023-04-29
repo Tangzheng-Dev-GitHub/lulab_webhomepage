@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
 
-Widget teacher() {
-  return Column(
+Widget hua() {
+  return Row(
     children: const [
       Center(
         child: Text(
-          "\n 创新教练体系",
+          """
+I had the privilege of being proflu's student in college,
+and I was deeply impressed by his emphasis on starting 
+computer language education early. My nephew joined his 
+lab, where he gained an excellent foundation in programming..
+          """,
           style: TextStyle(
-            fontSize: 40.0,
+            fontSize: 20.0,
             fontWeight: FontWeight.w600,
           ),
         ),
-      ),
-      Text("\n"),
-      Divider(
-        height: 10.0,
-        color: Colors.green,
-        thickness: 5.0,
-        indent: 650.0,
-        endIndent: 650.0,
       ),
     ],
   );
