@@ -99,13 +99,13 @@ Widget ea(BuildContext context) {
                     ),
                     TextButton(
                       child: const Text(
-                        "Github",
+                        "OpenAI",
                         style: TextStyle(
                           fontSize: 20.5,
                         ),
                       ),
                       onPressed: () {
-                        launch("https://www.github.com");
+                        launch("https://www.openai.com");
                       },
                     )
                   ]),

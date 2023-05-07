@@ -92,8 +92,9 @@ Widget subjects() {
             child: Text(
               "\n Our Virtual Lab",
               style: TextStyle(
-                  fontSize: 40.0,
+                  fontSize: 45.0,
                   fontWeight: FontWeight.w600,
+                  fontFamily: "tnr",
                   color: Colors.white),
             ),
           ),
@@ -134,6 +135,7 @@ Widget subjects() {
                     style: TextStyle(
                         fontSize: 32.0,
                         fontWeight: FontWeight.w600,
+                        fontFamily: "tnr",
                         color: Colors.black),
                   ),
                 ),
@@ -144,7 +146,10 @@ Widget subjects() {
           Hear what some of our students and instructors have to say                
           about our school's strengths.                               
                     ''',
-                  style: TextStyle(fontSize: 20.995, color: Colors.black),
+                  style: TextStyle(
+                    fontSize: 20.995,
+                    color: Colors.black,
+                  ),
                 ),
                 TextButton(
                   onPressed: () {},

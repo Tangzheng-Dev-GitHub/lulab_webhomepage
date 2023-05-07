@@ -62,7 +62,7 @@ class _SideListViewMenuState extends State<SideListViewMenu> {
                               child: Center(
                                 child: Text(
                                   str,
-                                  style: const TextStyle(fontFamily: "col"),
+                                  style: const TextStyle(fontFamily: "tnr"),
                                 ),
                               ),
                             )
@@ -80,24 +80,31 @@ class _SideListViewMenuState extends State<SideListViewMenu> {
             ),
           ),
           Expanded(
+              child: Container(
+            decoration: const BoxDecoration(
+                image: DecorationImage(
+              fit: BoxFit.fill,
+              image: NetworkImage(
+                  "https://openaicom.imgix.net/1c6a4da0-6336-42c1-82a2-922325092e0f/running-at-the-edge-of-space.jpeg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C1024%2C1024&w=3200"),
+            )),
             child: SingleChildScrollView(
                 child: Column(children: [
               card[_selectedIdx],
               const Text(
                 "\n\nWant to watch more classes？",
                 style: TextStyle(
-                  color: Colors.red,
+                  color: Colors.white,
                   fontSize: 30.0,
-                  fontFamily: 'MyFontStyle',
+                  fontFamily: 'tnr',
                 ),
               ),
               const Text(
                 "\nDownload the Lu Lab APP\n\n\n\n",
                 style: TextStyle(
-                    fontFamily: 'han', color: Colors.red, fontSize: 50.0),
+                    fontFamily: 'han', color: Colors.white, fontSize: 50.0),
               ),
             ])),
-          )
+          ))
         ],
       ),
     );

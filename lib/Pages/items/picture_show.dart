@@ -62,15 +62,12 @@ Widget picture() {
         ),
         Column(children: const [
           Text(
-            " \nWelcome!\n",
-            style: TextStyle(
-                fontSize: 40.0,
-                fontWeight: FontWeight.bold,
-                fontFamily: " han"),
+            " \nWelcome!",
+            style: TextStyle(fontSize: 52.0, fontFamily: "han"),
           ),
           Text(
-            " Stepping out of the ivory tower of Tsinghua University,\nallowing everyone the opportunity to receive high-quality education,\n and nurturing talents for the innovative era\n\n\n\n",
-            style: TextStyle(fontSize: 25.0, fontFamily: " col"),
+            "\nStepping out of the ivory tower of Tsinghua University,\nallowing everyone the opportunity to receive high-quality education,\nand nurturing talents for the innovative era\n\n",
+            style: TextStyle(fontSize: 25.0, fontFamily: "tnr"),
           ),
         ])
       ],

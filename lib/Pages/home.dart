@@ -59,13 +59,13 @@ class HomePage extends StatelessWidget {
                         text: "Home",
                       ),
                       Tab(
-                        text: "Online learning",
+                        text: "Online learning(test)",
                       ),
                       Tab(
                         text: "Lu Lab",
                       ),
                       Tab(
-                        text: "download APP",
+                        text: "download APP(test)",
                       ),
                       Tab(
                         text: "about us",

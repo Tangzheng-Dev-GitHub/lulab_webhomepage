@@ -8,9 +8,39 @@ import 'terms_of_service.dart';
 Widget aboutLulab(BuildContext context) {
   return Column(
     children: [
-      const Text("\n\n\n\n\n\n\n\n\n\n\n\n\n"),
-      Image.asset("res/images/lulab_logo.jpeg"),
-      const Text("\n\n"),
+      const Text("\n\n\n\n\n\n\n"),
+      Center(
+        child: Row(children: [
+          const Text(
+              "                                                                                                                                                     "),
+          Image.asset("res/images/lulab_logo.jpeg"),
+          Center(
+              child: Stack(
+            children: <Widget>[
+              // Stroked text as border.
+              Text(
+                '   Lu Lab clauses',
+                style: TextStyle(
+                  fontSize: 120,
+                  fontFamily: "ac",
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()
+                    ..style = PaintingStyle.stroke
+                    ..strokeWidth = 6
+                    ..color = Colors.black,
+                ),
+              ),
+              // Solid text as fill.
+              const Text(
+                '   Lu Lab clauses',
+                style: TextStyle(
+                    fontSize: 120, color: Colors.white, fontFamily: "ac"),
+              ),
+            ],
+          )),
+        ]),
+      ),
+      const Text("\n\n\n\n\n\n\n\n"),
       Card(
         child: Column(
           children: <Widget>[

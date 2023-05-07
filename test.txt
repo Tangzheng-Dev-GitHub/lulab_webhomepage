@@ -1,131 +1,26 @@
- Container(
-                              child: Dialog(
-                                shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(15)),
-                                ),
-                                child: SizedBox(
-                                  width: 289,
-                                  height: 135,
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      Stack(children: [
-                                        const SizedBox(
-                                          width: 289,
-                                          height: 135,
-                                        ),
-                                        const Positioned(
-                                          top: 11,
-                                          left: 60,
-                                          child: SizedBox(
-                                            width: 162,
-                                            height: 34,
-                                            child: Center(
-                                              child: Text(
-                                                '修改绑定的手机号',
-                                                textAlign: TextAlign.center,
-                                                style: TextStyle(fontSize: 15),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        const Positioned(
-                                          bottom: 50,
-                                          left: 84,
-                                          child: Text(
-                                            '当前绑定手机号为 \n 1888888888',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 13,
-                                                color: Colors.grey),
-                                          ),
-                                        ),
-                                        Positioned(
-                                            bottom: 0,
-                                            left: 15,
-                                            child: ButtonBar(
-                                              buttonPadding:
-                                                  const EdgeInsets.all(20),
-                                              alignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                SizedBox(
-                                                  width: 75,
-                                                  height: 22,
-                                                  child: ElevatedButton(
-                                                    style: ButtonStyle(
-                                                        shape: MaterialStateProperty.all(
-                                                            RoundedRectangleBorder(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            20.0))),
-                                                        backgroundColor:
-                                                            MaterialStateProperty
-                                                                .all(const Color
-                                                                        .fromARGB(
-                                                                    1,
-                                                                    217,
-                                                                    217,
-                                                                    217))),
-                                                    child: const Text(
-                                                      '取消',
-                                                      style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontSize: 12),
-                                                    ),
-                                                    onPressed: () {
-                                                      print('取消');
-                                                      Navigator.of(context)
-                                                          .pop();
-                                                    },
-                                                  ),
-                                                ),
-                                              ],
-                                            )),
-                                        Positioned(
-                                            bottom: 0,
-                                            right: 15,
-                                            child: ButtonBar(
-                                              buttonPadding:
-                                                  const EdgeInsets.all(20),
-                                              alignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                SizedBox(
-                                                  width: 75,
-                                                  height: 22,
-                                                  child: ElevatedButton(
-                                                    style: ButtonStyle(
-                                                        shape: MaterialStateProperty.all(
-                                                            RoundedRectangleBorder(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            20.0))),
-                                                        backgroundColor:
-                                                            MaterialStateProperty
-                                                                .all(Colors
-                                                                    .green)),
-                                                    child: const Text(
-                                                      '修改',
-                                                      style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontSize: 12),
-                                                    ),
-                                                    onPressed: () {
-                                                      print('修改');
-                                                      Navigator.of(context)
-                                                          .pop();
-                                                    },
-                                                  ),
-                                                )
-                                              ],
-                                            ))
-                                      ])
-                                    ],
-                                  ),
-                                ),
-                              ),
+Center(
+              child: Stack(
+            children: <Widget>[
+              // Stroked text as border.
+              Text(
+                '   Lu Lab clauses',
+                style: TextStyle(
+                  fontSize: 120,
+                  fontFamily: "ac",
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()
+                    ..style = PaintingStyle.stroke
+                    ..strokeWidth = 6
+                    ..color = Colors.black,
+                ),
+              ),
+              // Solid text as fill.
+              const Text(
+                '   Lu Lab clauses',
+                style: TextStyle(
+                    fontSize: 120, color: Colors.white, fontFamily: "ac"),
+              ),
+            ],
+          )),
+        ]),
+      ),
