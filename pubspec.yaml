@@ -93,7 +93,12 @@ flutter:
     - family: han
       fonts:
         - asset: res/fonts/han.ttf
-
+    - family: ac
+      fonts:
+        - asset: res/fonts/Apple-Chancery.ttf
+    - family: tnr
+      fonts:
+        - asset: res/fonts/TimesNewRoman.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
