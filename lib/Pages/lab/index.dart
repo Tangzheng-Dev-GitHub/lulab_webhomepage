@@ -14,7 +14,7 @@ class Lab extends StatelessWidget {
               image: DecorationImage(
                   fit: BoxFit.fill,
                   image: NetworkImage(
-                      "https://th.bing.com/th/id/OIP.DJZ6pGD-bZ2qkbArz_8xrgHaLH?pid=ImgDet&rs=1"))),
+                      "https://ts1.cn.mm.bing.net/th/id/R-C.5c44100a847675c7caeb4bcfd086ed3c?rik=q8YAeYeQRVDaXw&riu=http%3a%2f%2fclipart-library.com%2fimages%2fziX5nzB5T.jpg&ehk=hMii7BBpsvKOlXS3SS3l%2bv1o2QkkfY5IpLY8Vuh5jPA%3d&risl=&pid=ImgRaw&r=0"))),
           child: Column(children: [
             const Center(
               child: Text(
@@ -236,18 +236,34 @@ class Lab extends StatelessWidget {
                   image: NetworkImage(
                       "https://openaicom.imgix.net/33edbc89-4974-4992-9870-c76435ca0e2f/bug-bounty-program.png?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C2048%2C2048&w=800"))),
           child: Column(children: [
-            Column(children: const [
-              Text("\n\n\n"),
+            Column(children: [
+              const Text("\n\n\n"),
               Center(
-                child: Text(
-                  "What does children do in LuLab",
-                  style: TextStyle(
-                      fontSize: 45.0,
-                      fontFamily: 'MyFontStyle',
-                      color: Colors.green),
-                ),
-              ),
-              Center(
+                  child: Stack(
+                children: <Widget>[
+                  // Stroked text as border.
+                  Text(
+                    'FAQ : What does children do in LuLab',
+                    style: TextStyle(
+                      fontSize: 90,
+                      fontFamily: "ac",
+
+                      ///fontWeight: FontWeight.bold,
+                      foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 6
+                        ..color = Colors.black,
+                    ),
+                  ),
+                  // Solid text as fill.
+                  const Text(
+                    'FAQ : What does children do in LuLab',
+                    style: TextStyle(
+                        fontSize: 90, color: Colors.white, fontFamily: "ac"),
+                  ),
+                ],
+              )),
+              const Center(
                   child: Text(
                 "\n\nin the Junior class",
                 style: TextStyle(
@@ -255,7 +271,7 @@ class Lab extends StatelessWidget {
                   fontFamily: 'han',
                 ),
               )),
-              Center(
+              const Center(
                   child: Text(
                 '''
                   \n
@@ -264,7 +280,7 @@ class Lab extends StatelessWidget {
                 style: TextStyle(fontSize: 25.5, fontFamily: "col"),
               )),
             ]),
-            Column(children: const [
+            const Column(children: [
               Center(
                   child: Text(
                 "\n\nin the Industrial class",

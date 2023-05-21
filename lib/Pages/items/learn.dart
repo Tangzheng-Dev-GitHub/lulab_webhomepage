@@ -29,7 +29,7 @@ Widget learn() {
         image: DecorationImage(
           fit: BoxFit.fill,
           image: NetworkImage(
-              "https://openaicom.imgix.net/1c6a4da0-6336-42c1-82a2-922325092e0f/wildflowers.jpeg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C1024%2C1024&w=3200"),
+              "https://ts1.cn.mm.bing.net/th/id/R-C.3fe2d3868a4b8c4b4b8a49e42e588f3c?rik=ZXaClqXYSafoeA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f12%2fAbstract-Green-HD-Wallpaper.jpg&ehk=iAJSZP7pXlTlw5WzbkwTQdq%2bc%2bP0jN4J54pXTs%2f%2bpHo%3d&risl=&pid=ImgRaw&r=0"),
         ),
       ),
       child: Column(children: [

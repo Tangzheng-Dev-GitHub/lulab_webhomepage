@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import './web_learn/course_page.dart';
 import 'about/about_lulab.dart';
 import 'download_application/download_app.dart';
 import 'items/application.dart';
@@ -27,8 +26,8 @@ class HomePage extends StatelessWidget {
               child: AppBar(
                 backgroundColor: Colors.white,
                 leading: Row(children: [
-                  Image.network(
-                    "https://pic4.zhimg.com/v2-84274bc0fc5028dfc784d0719a6e8a65_xll.jpg",
+                  Image.asset(
+                    "res/images/leadingimage_logo.png",
                     fit: BoxFit.cover,
                   )
                 ]),
@@ -56,36 +55,37 @@ class HomePage extends StatelessWidget {
                     isScrollable: true,
                     tabs: [
                       Tab(
-                        text: "Home",
+                        text: " Home ",
+                      ),
+                      // Tab(
+                      //   text: "Online learning(test)",
+                      // ),
+                      Tab(
+                        text: " Lu Lab ",
                       ),
                       Tab(
-                        text: "Online learning(test)",
+                        text: " Download APP(test) ",
                       ),
                       Tab(
-                        text: "Lu Lab",
-                      ),
-                      Tab(
-                        text: "download APP(test)",
-                      ),
-                      Tab(
-                        text: "about us",
+                        text: " About Us ",
                       ),
                     ],
                     labelColor: Colors.black,
                     labelStyle: TextStyle(
                       fontSize: 27.5,
                       fontFamily: 'han',
+                      //fontWeight: FontWeight.bold
                     ),
                     unselectedLabelColor: Colors.grey,
                     indicatorColor: Colors.yellow,
                     indicator: UnderlineTabIndicator(
-                      borderSide: BorderSide(width: 3, color: Colors.red),
+                      borderSide: BorderSide(width: 3.5, color: Colors.red),
                     )),
               )),
           body: TabBarView(
             children: [
               SingleChildScrollView(child: homePage(context)),
-              const SideListViewMenu(),
+              //const SideListViewMenu(),
               const Lab(),
               SingleChildScrollView(
                 child: downloadApp(),
