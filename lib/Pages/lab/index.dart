@@ -18,7 +18,7 @@ class Lab extends StatelessWidget {
           child: Column(children: [
             const Center(
               child: Text(
-                "\n\n\nLu Xiangqian Innovation and Entrepreneurship Lab Purpose:\n",
+                "\n\n\nLuLab Purpose:\n",
                 style: TextStyle(
                   fontSize: 20.0,
                   fontFamily: 'MyFontStyle',
@@ -243,9 +243,9 @@ class Lab extends StatelessWidget {
                 children: <Widget>[
                   // Stroked text as border.
                   Text(
-                    'FAQ : What does children do in LuLab',
+                    'FAQ : What does students do in LuLab',
                     style: TextStyle(
-                      fontSize: 90,
+                      fontSize: 70,
                       fontFamily: "ac",
 
                       ///fontWeight: FontWeight.bold,
@@ -257,15 +257,15 @@ class Lab extends StatelessWidget {
                   ),
                   // Solid text as fill.
                   const Text(
-                    'FAQ : What does children do in LuLab',
+                    'FAQ : What does students do in LuLab',
                     style: TextStyle(
-                        fontSize: 90, color: Colors.white, fontFamily: "ac"),
+                        fontSize: 70, color: Colors.white, fontFamily: "ac"),
                   ),
                 ],
               )),
               const Center(
                   child: Text(
-                "\n\nin the Junior class",
+                "\n\nIn the Meta-verse CLub",
                 style: TextStyle(
                   fontSize: 50,
                   fontFamily: 'han',
@@ -275,15 +275,18 @@ class Lab extends StatelessWidget {
                   child: Text(
                 '''
                   \n
-          First we let chindren play with with new games/stuff, then we let them code.
+At Meta-verse Club, we believe in leveraging children's natural 
+tendency to play as a powerful tool for learning and growth. 
+Our mission is to guide children from game players to game 
+creators while giving them the necessary programming skills.
               ''',
-                style: TextStyle(fontSize: 25.5, fontFamily: "col"),
+                style: TextStyle(fontSize: 25.5, fontFamily: "tnr"),
               )),
             ]),
             const Column(children: [
               Center(
                   child: Text(
-                "\n\nin the Industrial class",
+                "\n\nIn the Digital Technology Club",
                 style: TextStyle(
                   fontSize: 50,
                   fontFamily: 'han',
@@ -293,9 +296,16 @@ class Lab extends StatelessWidget {
                   child: Text(
                 '''
                   \n
-          We let chindren code, then we let then do projects for LuLab.\n\n
+We've been taking our students on the hottest projects. Recently
+, We made an AI app. 
+Because innovation comes in waves, after 94, the opportunity for
+innovation is basically to build a website, such as Alibaba,
+Baidu, Google, etc. After the emergence of smart phones,
+basically the opportunity is to build an app, such as 
+wechat, Meituan, Kuaishou, etc. Recently the app opportunities
+for artificial intelligence are getting better and better.\n\n
               ''',
-                style: TextStyle(fontSize: 25.5, fontFamily: "col"),
+                style: TextStyle(fontSize: 25.5, fontFamily: "tnr"),
               )),
             ]),
             Center(

@@ -50,9 +50,37 @@ Widget ea(BuildContext context) {
                       onPressed: () {
                         launch("https://github.com/proflulab/LuLab_frontend/");
                       },
+                    ),
+                    const Text("\n"),
+                    const Text(
+                      " Contact us",
+                      style: TextStyle(
+                        fontSize: 40.5,
+                        fontFamily: 'han',
+                      ),
+                    ),
+                    TextButton(
+                      child: const Text(
+                        "\nadmission@proflu.cn",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {},
+                    ),
+                    TextButton(
+                      child: const Text(
+                        "San Francisco, CA 94539",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {
+                        //launch("https://github.com/proflulab/LuLab_frontend/");
+                      },
                     )
                   ]),
-              const Text("        "),
+              const Text("                                 "),
               Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,10 +135,54 @@ Widget ea(BuildContext context) {
                       onPressed: () {
                         launch("https://www.openai.com");
                       },
-                    )
+                    ),
+                    TextButton(
+                      child: const Text(
+                        "ScaleAI",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {
+                        launch("https://scale.com/");
+                      },
+                    ),
+                    TextButton(
+                      child: const Text(
+                        "Nuro",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {
+                        launch("https://www.nuro.ai/technology");
+                      },
+                    ),
+                    TextButton(
+                      child: const Text(
+                        "DataRobot",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {
+                        launch("https://www.datarobot.com/");
+                      },
+                    ),
+                    TextButton(
+                      child: const Text(
+                        "People.AI",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {
+                        launch("https://www.people.ai/");
+                      },
+                    ),
                   ]),
               const Text(
-                  "                                                                                                    "),
+                  "                                                                        "),
               Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -270,6 +342,34 @@ Widget ea(BuildContext context) {
                 fontFamily: 'han',
               ),
             ),
+          ),
+          Stack(
+            children: <Widget>[
+              // Stroked text as border.
+              Text(
+                '\n聚天下英才名师组团玩\n',
+                style: TextStyle(
+                  fontSize: 70,
+                  //color: Colors.white,
+                  fontFamily: "col",
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()
+                    ..style = PaintingStyle.stroke
+                    ..strokeWidth = 6
+                    ..color = Colors.greenAccent,
+                ),
+              ),
+              // Solid text as fill.
+              const Text(
+                '\n聚天下英才名师组团玩\n',
+                style: TextStyle(
+                  fontSize: 70,
+                  color: Colors.black,
+                  fontFamily: "col",
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
           const Text("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"),
         ],

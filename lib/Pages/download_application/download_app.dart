@@ -15,7 +15,7 @@ Widget downloadApp() {
         ),
       ),
       const Text("\n\n"),
-      Column(children: const [
+      const Column(children: [
         Text(
           "Download options：(this is a testing part, the data in the app may be not true, or some parts in the app incomplete, we are extremely sorry.)",
           style: TextStyle(fontSize: 20.0, fontFamily: "MyFontStyle"),
@@ -33,7 +33,7 @@ Widget downloadApp() {
           },
           child: const ListTile(
             title: Text(
-              "download（Android）",
+              "download(Android)",
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.w600,
@@ -62,7 +62,7 @@ Widget downloadApp() {
           },
           child: const ListTile(
             title: Text(
-              "download（iOS）",
+              "download(iOS)",
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.w600,

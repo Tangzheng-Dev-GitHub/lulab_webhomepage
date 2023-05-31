@@ -25,12 +25,12 @@ class HomePage extends StatelessWidget {
               preferredSize: const Size.fromHeight(kToolbarHeight * 1.25),
               child: AppBar(
                 backgroundColor: Colors.white,
-                leading: Row(children: [
-                  Image.asset(
+                leading: Center(
+                  child: Image.asset(
                     "res/images/leadingimage_logo.png",
-                    fit: BoxFit.cover,
-                  )
-                ]),
+                    fit: BoxFit.fill,
+                  ),
+                ),
                 flexibleSpace: Image.network(
                     "https://p1.ssl.qhmsg.com/t01c3b81fccea47f580.jpg",
                     fit: BoxFit.cover),
@@ -38,10 +38,11 @@ class HomePage extends StatelessWidget {
                   Center(
                       child: TextButton(
                     child: const Text(
-                      "Powered by Flutter Web and Dart    ",
+                      "Powered by Flutter Web and Dart   ",
                       style: TextStyle(
                           fontSize: 15.0,
-                          fontFamily: "han",
+                          fontFamily: "MyFontStyle",
+                          fontWeight: FontWeight.bold,
                           color: Colors.black),
                     ),
                     onPressed: () {
@@ -67,7 +68,7 @@ class HomePage extends StatelessWidget {
                         text: " Download APP(test) ",
                       ),
                       Tab(
-                        text: " About Us ",
+                        text: " About",
                       ),
                     ],
                     labelColor: Colors.black,
