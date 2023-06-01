@@ -48,7 +48,7 @@ Widget ea(BuildContext context) {
                         ),
                       ),
                       onPressed: () {
-                        launch("https://github.com/proflulab/LuLab_frontend/");
+                        launch("https://github.com/proflulab");
                       },
                     ),
                     const Text("\n"),
