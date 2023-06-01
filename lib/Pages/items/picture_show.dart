@@ -150,9 +150,20 @@ Widget picture() {
       ])
     ]),
     Column(children: [
-      Image.asset("res/images/hello.png"),
       const Text(
-        " \nNew Education in the Age of AI",
+        " \n\n",
+      ),
+      Image.asset(
+        "res/images/hello.png",
+        height: 250,
+        width: 375,
+      ),
+      const Text(
+        " To The",
+        style: TextStyle(fontSize: 52.0, fontFamily: "han"),
+      ),
+      const Text(
+        " New Education in the Age of AI",
         style: TextStyle(fontSize: 52.0, fontFamily: "han"),
       ),
       const Text(
