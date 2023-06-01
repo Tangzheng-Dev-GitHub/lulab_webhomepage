@@ -180,6 +180,29 @@ Widget ea(BuildContext context) {
                         launch("https://www.people.ai/");
                       },
                     ),
+                    TextButton(
+                      child: const Text(
+                        "Ubuntu Inc.",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {
+                        launch("https://www.ubuntu.com/");
+                      },
+                    ),
+                    //Ali Cloud mirror station
+                    TextButton(
+                      child: const Text(
+                        "Aliyun mirror station",
+                        style: TextStyle(
+                          fontSize: 20.5,
+                        ),
+                      ),
+                      onPressed: () {
+                        launch("https://developer.aliyun.com/mirror");
+                      },
+                    ),
                   ]),
               const Text(
                   "                                                                        "),
@@ -334,15 +357,6 @@ Widget ea(BuildContext context) {
           //         )
           //       ]),
           // ])
-          const Center(
-            child: Text(
-              "\n聚天下英才名师组团玩\n",
-              style: TextStyle(
-                fontSize: 70.0,
-                fontFamily: 'han',
-              ),
-            ),
-          ),
           Stack(
             children: <Widget>[
               // Stroked text as border.
@@ -351,8 +365,8 @@ Widget ea(BuildContext context) {
                 style: TextStyle(
                   fontSize: 70,
                   //color: Colors.white,
-                  fontFamily: "col",
-                  fontWeight: FontWeight.bold,
+                  fontFamily: "han",
+                  //fontWeight: FontWeight.bold,
                   foreground: Paint()
                     ..style = PaintingStyle.stroke
                     ..strokeWidth = 6
@@ -365,8 +379,8 @@ Widget ea(BuildContext context) {
                 style: TextStyle(
                   fontSize: 70,
                   color: Colors.black,
-                  fontFamily: "col",
-                  fontWeight: FontWeight.bold,
+                  fontFamily: "han",
+                  //fontWeight: FontWeight.bold,
                 ),
               ),
             ],
