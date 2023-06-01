@@ -66,7 +66,7 @@ class Lab extends StatelessWidget {
             //const Text("\n\n\n"),
             const Center(
               child: Text(
-                "\nIn Lu lab",
+                "\nIn Lu Lab",
                 style: TextStyle(
                     fontSize: 60.0, fontFamily: 'tnr', color: Colors.black),
               ),

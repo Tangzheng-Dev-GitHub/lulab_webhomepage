@@ -18,7 +18,7 @@ Widget downloadApp() {
       const Column(children: [
         Text(
           "Download options：(this is a testing part, the data in the app may be not true, or some parts in the app incomplete, we are extremely sorry.)",
-          style: TextStyle(fontSize: 20.0, fontFamily: "MyFontStyle"),
+          style: TextStyle(fontSize: 20.0, fontFamily: "tnr"),
         ),
       ]),
       const Text("\n\n\n\n\n"),
@@ -33,14 +33,15 @@ Widget downloadApp() {
           },
           child: const ListTile(
             title: Text(
-              "download(Android)",
+              "Download (Android)",
               style: TextStyle(
+                fontFamily: "col",
                 fontSize: 30.0,
                 fontWeight: FontWeight.w600,
               ),
             ),
             subtitle: Text(
-              "Install Lu Xiangqian Lab on Android phones",
+              "\nInstall LuLab on Android phones",
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w600,
@@ -62,14 +63,15 @@ Widget downloadApp() {
           },
           child: const ListTile(
             title: Text(
-              "download(iOS)",
+              "Download (iOS)",
               style: TextStyle(
+                fontFamily: "col",
                 fontSize: 30.0,
                 fontWeight: FontWeight.w600,
               ),
             ),
             subtitle: Text(
-              "Install Lu Xiangqian Lab on an iPhone or iPad",
+              "\nInstall LuLab on an iPhone or iPad",
               style: TextStyle(
                 fontSize: 15.0,
                 fontWeight: FontWeight.w600,
