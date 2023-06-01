@@ -6,104 +6,110 @@ import 'privacy_policy.dart';
 import 'terms_of_service.dart';
 
 Widget aboutLulab(BuildContext context) {
-  return Column(
-    children: [
-      const Text("\n\n\n\n\n\n\n"),
-      Center(
-        child: Row(children: [
-          const Text(
-              "                                                                                                                                                     "),
-          Image.asset("res/images/lulab_logo.jpeg"),
+  return Container(
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.fill,
+              image: NetworkImage(
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCEdc4Elb9ki6lF4EknFqMaQO03EGk4FioFg&usqp=CAU"))),
+      child: Column(
+        children: [
+          const Text("\n\n\n\n\n\n\n"),
           Center(
-              child: Stack(
-            children: <Widget>[
-              // Stroked text as border.
-              Text(
-                '   Lu Lab clauses',
-                style: TextStyle(
-                  fontSize: 120,
-                  fontFamily: "ac",
-                  fontWeight: FontWeight.bold,
-                  foreground: Paint()
-                    ..style = PaintingStyle.stroke
-                    ..strokeWidth = 6
-                    ..color = Colors.black,
-                ),
-              ),
-              // Solid text as fill.
+            child: Row(children: [
               const Text(
-                '   Lu Lab clauses',
-                style: TextStyle(
-                    fontSize: 120, color: Colors.white, fontFamily: "ac"),
-              ),
-            ],
-          )),
-        ]),
-      ),
-      const Text("\n\n\n\n\n\n\n\n"),
-      Card(
-        child: Column(
-          children: <Widget>[
-            ListTile(
-              title: const Text(
-                '     Service Use Agreement',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: 'col',
-                  fontSize: 20.0,
+                  "                                                                                                                                                     "),
+              Image.asset("res/images/lulab_logo.jpeg"),
+              Center(
+                  child: Stack(
+                children: <Widget>[
+                  // Stroked text as border.
+                  Text(
+                    '   Lu Lab clauses',
+                    style: TextStyle(
+                      fontSize: 120,
+                      fontFamily: "ac",
+                      fontWeight: FontWeight.bold,
+                      foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 6
+                        ..color = Colors.black,
+                    ),
+                  ),
+                  // Solid text as fill.
+                  const Text(
+                    '   Lu Lab clauses',
+                    style: TextStyle(
+                        fontSize: 120, color: Colors.white, fontFamily: "ac"),
+                  ),
+                ],
+              )),
+            ]),
+          ),
+          const Text("\n\n\n\n\n\n\n\n"),
+          Card(
+            child: Column(
+              children: <Widget>[
+                ListTile(
+                  title: const Text(
+                    '     Service Use Agreement',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'col',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.navigate_next, size: 27.0),
+                    onPressed: () {
+                      showDialog(
+                          context: context, builder: (context) => tos(context));
+                    },
+                  ),
                 ),
-              ),
-              trailing: IconButton(
-                icon: const Icon(Icons.navigate_next, size: 27.0),
-                onPressed: () {
-                  showDialog(
-                      context: context, builder: (context) => tos(context));
-                },
-              ),
-            ),
-            const Divider(),
-            ListTile(
-              title: const Text(
-                '     Privacy Policy',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: 'col',
-                  fontSize: 20.0,
+                const Divider(),
+                ListTile(
+                  title: const Text(
+                    '     Privacy Policy',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'col',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.navigate_next, size: 27.0),
+                    onPressed: () {
+                      showDialog(
+                          context: context, builder: (context) => pp(context));
+                    },
+                  ),
                 ),
-              ),
-              trailing: IconButton(
-                icon: const Icon(Icons.navigate_next, size: 27.0),
-                onPressed: () {
-                  showDialog(
-                      context: context, builder: (context) => pp(context));
-                },
-              ),
-            ),
-            const Divider(),
-            ListTile(
-              title: const Text(
-                '     Copyright Notice',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: 'col',
-                  fontSize: 20.0,
+                const Divider(),
+                ListTile(
+                  title: const Text(
+                    '     Copyright Notice',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'col',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.navigate_next, size: 27.0),
+                    onPressed: () {
+                      showDialog(
+                          context: context, builder: (context) => cn(context));
+                    },
+                  ),
                 ),
-              ),
-              trailing: IconButton(
-                icon: const Icon(Icons.navigate_next, size: 27.0),
-                onPressed: () {
-                  showDialog(
-                      context: context, builder: (context) => cn(context));
-                },
-              ),
+              ],
             ),
-          ],
-        ),
-      ),
-      const Text(
-        "\n\n\n\n\n--Copyright by Shisuan New Mileage Technology (Beijing) Co., Ltd.--\n\n\n\n\n",
-        style: TextStyle(color: Colors.grey),
-      ),
-    ],
-  );
+          ),
+          const Text(
+            "\n\n\n\n\n--Copyright by Shisuan New Mileage Technology (Beijing) Co., Ltd.--\n\n\n\n\n",
+            style: TextStyle(color: Colors.grey),
+          ),
+        ],
+      ));
 }

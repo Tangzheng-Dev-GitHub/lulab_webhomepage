@@ -7,9 +7,15 @@ Widget hua() {
               fit: BoxFit.fill,
               image: NetworkImage(
                   "https://openaicom.imgix.net/8d14e8f0-e267-4b8b-a9f2-a79120808f5a/chatgpt.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C2048%2C2048&w=3200"))),
-      child: Row(
+      child: Center(
+          child: Row(
         children: [
-          Image.asset("res/images/ysm.png"),
+          const Text(
+              "                                                                                                   "),
+          Image.asset(
+            "res/images/ysm.png",
+            //fit: BoxFit.,
+          ),
           const Center(
             child: Text(
               """
@@ -33,5 +39,5 @@ Widget hua() {
             ),
           ),
         ],
-      ));
+      )));
 }

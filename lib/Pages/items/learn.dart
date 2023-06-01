@@ -44,11 +44,11 @@ Widget learn() {
               shrinkWrap: true,
               children: [
                 _buildLTItem(
-                    "Junior class",
+                    "Meta-verse CLub",
                     "Children will learn the basics of programming",
                     "res/images/lulab_logo.jpeg"),
                 _buildLTItem(
-                    'Industrial class',
+                    'Digital Technology Club',
                     "Enhance students' professional skills and practical \nexperience in computer science and artificial intelligence.",
                     "res/images/lulab_logo.jpeg"),
               ],

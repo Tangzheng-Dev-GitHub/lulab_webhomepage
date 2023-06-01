@@ -113,6 +113,7 @@ Widget picture() {
             ),
           ],
         )),
+
         Center(
             child: Stack(
           children: <Widget>[
@@ -149,6 +150,7 @@ Widget picture() {
       ])
     ]),
     Column(children: [
+      Image.asset("res/images/hello.png"),
       const Text(
         " \nNew Education in the Age of AI",
         style: TextStyle(fontSize: 52.0, fontFamily: "han"),
